@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="../Js/jquery-1.9.1.js"></script>
+    <script src="../Js/jquery-1.9.1.min.js"></script>
+    <script src="../Js/Cmn.js"></script>
+    <script src="../Js/CmnAjax.js"></script>
+    <script src="../Js/CmnTools/VideoPlayer/VideoProcess.js"></script>
+    <title>C4L</title>
+    <script type="text/javascript">
+        var _smq = _smq || [];
+        _smq.push(['_setAccount', 'c29d8d', new Date()]);
+        _smq.push(['pageview']);
+
+        (function () {
+            var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+            sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/sm.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+        })();
+        (function () {
+            var mz = document.createElement('script');
+            mz.type = 'text/javascript'; mz.async = true; mz.src = 'http://js.miaozhen.com/t.js';
+            var t = document.getElementsByTagName('script')[0];
+            t.parentNode.insertBefore(mz, t);
+        })();
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".JscVideo").on("click", function () {
+                var _indexvideourl = Cmn.Func.GetAbsoluteUrl("../video/forwardpower.mp4");
+                $(".JscVideo").html(Cmn.Video.GetVideoPlayerHtml(_indexvideourl, 665, 373, "", true));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="warp">
+        <div class="main">
+            <div class="topbgtext">
+                <img src="images/bg.jpg" />
+            </div>
+            <div class="video JscVideo">
+                <img class="JscVideoImg" src="images/video.jpg" style="cursor:pointer;"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

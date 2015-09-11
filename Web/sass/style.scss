@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+@import "user/carousel";
+// @import "compass/helpers";
+// @import "compass/tilities";
+
+//定义浏览器的兼容最低版本
+$browser-minimum-versions:("ie":"8");
+.box_img img{width:$Width;display:block;}
+/*-------------------------------------css--------------------------------------------*/
+html{overflow:hidden;}
+html,body,.Wrap,.Main{@extend %wh100; font-size:$Font-Size12;font-family:"Microsoft Yahei";}
+body{width:$Width;@extend %center-block;height:$Height;overflow: hidden;}
+.Wrap{@include position();}
+.Main{@include position();}
+.Position{position:absolute;} 
+.PublicScenes{@include position();display:none;@extend %wh100;overflow:hidden;}
+/*各场景背景*/
+.Bg{@include position();overflow:hidden;min-width:$wrapWidth;width:$Width;}    
+.Bg img{width:$Width;min-width:$wrapWidth;}     
+.PublicScenes .Bg img{position:relative;}
+.Inner{min-width:$wrapWidth;@extend %center-block;position:relative;height:$Height;width:$Width;}
+
+
+.home_carousel:after{content: '\0020';}
+.home_carousel:before{content: '\0020';}
+/*********************首页************************/
+.home_box{height:$Height;width:$Width;
+	.home_lfarrow{@include position(51%,7%);z-index:10;
+       &:hover{@include opacity(0.5);}
+	}
+	.home_rlarrow{@include position(51%,91%);z-index:10;
+       &:hover{@include opacity(0.5);}
+	}
+  .home_sidebar{height:$Height;width:$Width;position:relative;overflow:hidden;
+    	  .home_nav{height:$Height;width:$Width;@include legacy-pie-clearfix();position:relative;overflow:hidden;
+    		  li{height:$Height;width:$Width;@include float();
+    		    	a{height:$Height;width:$Width;cursor:default;
+                  img{width:$Width;@include position(-3%);}
+    		    	}
+    		}
+    	}
+  }
+}
+.home_carousel{@include horizontal-center(88%,120px);text-align:center;font-size:0;z-index:10;margin-left: -56px;
+      a{width: 10px;height: 10px;@include hide-text;@include prefixer(border-radius,50%);border:solid 2px $Color-White;margin-right: 26px;@include inline-block;@extend %transparent_bg;}
+      a.carousel_set{background: $Color-Red;border:none;width: 14px;height: 14px;}
+}
+
+
+/*********************STT************************/
+.stt_tip{@include position(21%,-36%);width: 36%;}
+
+/*********************参数配置表************************/
+.configuration_con{@include position(18%,26%);@include rolling-container(44%,70%)}
+.configuration_tip{@include position(11.5%,43%);width: 14%;}
+.configuration_shadow{@include position(0,8%);width: 35%;}
+
+
+/*********************新闻详细内页************************/
+.news_tip{@include position(24%,20%);width: 18%;}
+.inf_title{@include position(24%,20%);width: 32%;}
+.news_box{@include position(32%,19%);width: 30%;height: 45%;background-color:$Color-White;
+   .news_bar{height:$Height;width:$Width;position:relative;overflow:hidden;
+   	  .news_nav{height:$Height;width:$Width;position:relative;overflow:hidden;@include legacy-pie-clearfix();
+   	  	 li{height:$Height;width:$Width;@include float();
+   	  	 	a img{height:$Height;}
+   	  	 }
+   	  }
+   }
+}
+.news_con{@include position(33%,52%);width: 31%;height: 44%;
+   .news_title{max-height:35%;overflow: hidden;
+   	  h3{@include font-style($NewsBigFont,$Color-Black,null,600);@include ellipsis;}
+   	  .news_item{margin-top: 3%;
+   	  	h4{@include font-style($textSize,$Color-Gray,null);}  	  	
+   	  }
+   	  .news_more{@include position(36%,84%);
+        a{@include font-style($MenuSideBarSmall,$Color-Red,null);text-decoration:underline;}
+   	  }
+   }
+   .news_details{margin-top: 8%;height: 50%;
+       .news_des{@include ellipsis;height: $Height;
+	       	a{@include font-style($NewsFont,$Color-Gray,null);display:block;@include ellipsis;max-width:85%;height:14%;
+	           &:hover{color:$Color-Red;}
+	       	}
+       }
+   }
+}
+.news_page{/*position:absolute;top: 92%;right:0;*/@include position-right(75%,18%);
+   .page_nav{@include legacy-pie-clearfix();
+   	    li{@include float();text-align:center;margin-right: 10px;@include font-style($MenuSideBarSmall,$Color-Red,null);width:20px;height:20px;line-height:20px;cursor:pointer;}
+   	    li.append{@include prefixer(border-radius,50%);color:$Color-White;background:$Color-Red;}
+   }
+}
+
+
+.news_carousel{@include horizontal-center(90%,$Width);text-align:center;font-size:0;z-index: 10;
+        a{@include inline-block;@include prefixer(border-radius,50%);border:solid 2px $Color-White;width: 8px;height: 8px;margin-right: 15px;@include hide-text;}   
+        a.carousel_update{background: $Color-Red;border:none;width: 12px;height: 12px;} 
+}
+ 
+.news_return{@include position(23%,78%);
+ a{@include font-style($Font-Size12,$Color-White,null);@include background(linear-gradient(top, $Color-Red, $Color-Black));@include prefixer(border-radius,5px);text-align:center;width:50px;@include prefixer(box-shadow,2px 2px 5px #5c5c5c);@include filter-gradient($Color-Red,$Color-Black,vertical);}
+}
+/*********************精彩下载************************/
+.shadow_box{display:none;}
+.lf_shadow{@include position();width: 21%;}
+.rl_shadow{width: 15.5%;position: absolute;bottom: 0;right: 0;}
+.paper_shadow{@include position(13.8%,13%);}
+.video_shadow{@include position(51%,75%);}
+.hover_des{@extend .press_hover;}
+.download_box{height: 33%;width: 17%;}
+.download_hover{@include position();display:none;}
+.download_box.hover .reset_shadow{display:none;}
+.download_box.hover .download_hover{display:block;}
+.reset_shadow{@include position();height: $Height;}
+.paper_box{@include position(13%,26%);width: 49%;height: 46%;overflow:hidden;font-size:0;
+    .paper_item{height: $Height;width: $Width;@include inline-block;
+        .paper_menu{width: 30%;}
+        .paper_con1{@include position(34%,4%);}
+        .paper_con2{@include position(0%,20%);}
+        .paper_con3{@include position(34%,36%);}
+        .paper_con4{@include position(0%,52%);}
+        .paper_con5{@include position(34%,68%);}
+    }
+    .paper_page_box{@include position-right();width: 12%;height: 9%;
+        .paper_page{position: absolute;top: 0%;
+          a{width: 37px;height: 37px;background:image-url('icon/page_bg.png') no-repeat;}
+        }
+        .paper_left_page{left:0%;
+           a:hover{background-position:-37px 0px;}
+        }
+        .paper_left_page.page_set a{background-position:-37px 0px;}
+        .paper_right_page{right: 0;
+          a{background-position:-74px 0px;
+             &:hover{background-position:-112px 0px;}
+          }
+        }
+        .paper_right_page.page_set a{background-position:-112px 0px;}
+    }
+}
+
+
+.video_box{@include position(46%,30.3%);width: 49%;height: 46%;overflow: hidden;font-size:0;
+    .video_item{height: $Height;width: $Width;@include inline-block;
+        .video_menu{width: 30%;}
+        .video_con1{@include position(34%,27%);}
+        .video_con2{@include position(0%,43%);}
+        .video_con3{@include position(34%,59%);}
+    }
+    .video_page_box{width: 12%;height: 9%;@include position(88%);
+          .video_page{position: absolute;top: 0%;
+          a{width: 37px;height: 37px;background:image-url('icon/page_bg.png') no-repeat; }
+        }
+        .video_left_page{left:0%;
+          a:hover{background-position:-37px 0px;}
+
+        }
+        .video_left_page.page_set a{background-position:-37px 0px;}
+        .video_right_page{right:0%;
+          a{background-position:-74px 0px;
+             &:hover{background-position:-112px 0px;}
+          }
+        }
+        .video_right_page.page_set a{background-position:-112px 0px;}
+    }
+}
+
+.paper_menu i,.video_menu i{@extend .press_hover;}
+/*********************新闻发布************************/
+.press_shadow{@include position(-4%,11.5%);width: 38%;}
+.press_box{width: 30%;height: 58%;}
+.focus_news{@include position(28%,10%);}
+.media_reports{@include /*position(18.5%,35%)*/position(28%,60%);}
+// .user_experience{@include position(31%,60%);}
+.press_bar{@include position();}
+.press_hover{@include horizontal-vertically-center(50%,50%);cursor:pointer;z-index:10;@include inline-block;@extend %transparent_bg;}
+.press_hoverbar{@include position();display:none;}
+.press_box.hover .press_bar{display:none;}
+.press_box.hover .press_hoverbar{display:block;}
+
+
+
+
+
+
+
+
+
+
+
+

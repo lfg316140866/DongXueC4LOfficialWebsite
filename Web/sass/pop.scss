@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import 'compass/support';
+@import "user/custom";
+// @import "compass/helpers";
+// @import "compass/tilities";
+
+//定义浏览器的兼容最低版本
+$browser-minimum-versions:("ie":"8");
+%SmallFont{@include font-style($Font-Size12,$Color-GrayForm,null);@include prefixer(transform,scale(0.9));font-size:6.5px\0;}
+/************************************浮层*********************************************/
+.pop_float{@include pop(0.75);
+     .drive_float{display:none;background:image-url('pop/msg_bg.png') no-repeat;@include horizontal-vertically-center(505px,505px);}
+     .shopping_float{@extend .drive_float;}
+     .rotate_float{background: image-url('pop/rotate/rotate_bg.png') no-repeat;@extend .drive_float;}
+     .wallpaper_float{display:none;@include horizontal-vertically-center(697px,447px);}
+     .inf_float{display:none;@include horizontal-vertically-center(700px,540px);background: $Color-White;}
+     .attesting_float{display:none;@include horizontal-vertically-center(739px,474px);background: image-url('pop/attesting_box_bg.png') no-repeat;}
+     .answer_float{background:image-url('pop/answer/answer_bg.png') no-repeat;@extend .drive_float;display:none;}
+     .video_float{background-color:$Color-Black;display:none;width: $Width;height: $Height;@include position();}
+}
+
+/******************预约试驾********************/
+.driver_car{@include position(380px,105px);}
+.msg_btn{@include position(254px,445px);}
+.msg_close_btn{@include position(205px,-25px);}
+.driver_gift{@include position(32px,402px);}
+.driver_tip{@include position(10px,115px);}
+.msg_box{margin-top: 125px;margin-left: 75px;width: 300px;text-align:right;
+	p.accurate{margin-top: -4px;color:$Color-Red;font-weight:600; @extend %SmallFont;font-size:10px\0;}
+   .msg_form{
+   	  .msg_item{
+   	  	 li{margin-bottom: 7px;
+   	  	 	a{background:image-url('pop/sex_bg.png') -16px 0px no-repeat;width:16px;height:16px;@include inline-block;margin-right:10px; vertical-align:sub;}
+   	  	 	span,em{@include font-style($formSize,$Color-Red,null,600);@include inline-block;}
+   	  	 	em{margin-right: 15px;color:$Color-GrayForm;cursor:pointer;}
+   	  	 	em.sex_select a{background-position:0px 0px;}
+   	  	 	span{margin-right: 5px;}
+   	  	 	.sex_man{margin-left: 10px;}
+   	  	 	label{@include font-style($formSize,$Color-GrayForm,null);}
+   	  	 	.pub_set{@include form-box($formSize,25px,10px,$Color-White);margin-left: 8px;}
+ 	  	    .pub_small{background: image-url('pop/select_bg.png') no-repeat;width: 91px;}
+ 	  	    .pub_big{background: image-url('pop/input_bg.png') no-repeat;width:184px;}
+          .select_box{padding-top: 4px;padding-bottom: 4px;
+             option{background:$Color-Select;}
+          }
+ 	  	    .msg_date{margin-left: 4px;margin-right: 10px;}
+ 	  	    .msg_province{margin-left: 7px;margin-right: 10px;}
+ 	  	    .msg_city{margin-left: 6px;margin-right: 4px;}
+ 	  	    .msg_area{margin-left: -1px;margin-right: 9px;}
+   	  	 }
+   	  	 li.sex_li{text-align:left;margin: -3px 0px 4px 60px;}
+   	  }
+   }
+}
+.checkbox_bar{width: 200px;margin-left: 77px; margin-top: -5px;
+    .check_set{vertical-align:middle;margin-right:5px;width:16px;height:16px;}
+    span{@include font-style($SmallFont,$Color-GrayForm,null);line-height:35px;}
+    a{text-decoration:underline;display:inline;@include font-style($SmallFont,$Color-Red,null,600);}
+    p{margin-top:-10px;@include font-style($SmallFont,$Color-GrayForm,null);}
+}
+/******************预约购车********************/
+.shopping_car{@include position(380px,140px);}
+.shopping_tip{@include position(45px,70px);}
+
+/******************360度车********************/
+.rotate_load{background: image-url('pop/rotate/straining.gif') no-repeat;@include horizontal-vertically-center(124px,124px);}
+.rotate_tip{@include position(30px,95px);}
+.rotate_btn{@include position(205px,482px);}
+.rotate_menu{@include legacy-pie-clearfix();@include horizontal-center(375px,110px);margin-left: -50px;
+    li{margin-right: 6px;@include float();height: 29px;text-align:center;margin-bottom: 18px;
+       a{width:29px;height:29px;
+          &:hover{@include opacity(0.5);}
+          img{display:block;}
+       }     
+       a.color_set{margin-top:-2px;}
+       a.color_white.color_set{border:solid 1px darken(#979797,10%);}
+       a.color_blue.color_set{border:solid 1px darken($Color-Blue,10%);}
+       a.color_red.color_set{border:solid 1px darken($Color-Red,20%);}
+       em{@include font-style($formSize,null,null);position:absolute;margin-top:0;margin-left:-4px;margin-left: 12px\0;@include prefixer(transform,scale(0.7));font-size:8px\0;}
+       em.font_white{color:#979797;}
+       em.font_blue{color:$Color-Blue;}
+       em.font_red{color:$Color-Red;}
+       em.font_gray{color:$Color-Gray;}
+       em.font_glod{color:$Color-Glod;}
+       em.font_block{color:$Color-Black;}
+    }
+}
+.rotate_box{width:$Width;height:$Height;
+    .rotate_bar{width:$Width;height:$Height;@include position();}
+    .rotate_left{@include position(245px,52px);
+        &:hover{@include opacity(0.5);}
+    }
+    .rotate_right{@include position(245px,450px);
+        &:hover{@include opacity(0.5);}
+    }
+}
+/******************壁纸********************/
+.wallpaper_close_btn{@include position(0px,697px);}
+.wallpaper_btn a{background:image-url('icon/page_float_bg.png') no-repeat;width: 26px;height: 26px;}
+.wallpaper_left_btn{@include position(385px,-36px);
+   a{background-position:0 0;}
+}
+.wallpaper_right_btn{@include position(420px,-36px);
+   a{background-position:-52px 0px;}
+}
+.wallpaper_left_btn.wallpaper_set a{background-position:-26px 0px;}
+.wallpaper_right_btn.wallpaper_set a{background-position:-78px 0px;}
+
+.wallpaper_box{position:relative;overflow:hidden;width: $Width;height: $Height;
+	.wallpaper_bar{@include legacy-pie-clearfix();width: $Width;height: $Height;position: relative;overflow: hidden;
+		li{@include float();width: $Width;height: $Height;position:relative;  
+           a{width:$Width;height:$Height;
+               img{width: 697px;height: 447px;background-color:$Color-White;}
+           }
+           span{width: 55px;height: 40px;@include position(382px,605px);
+               a{display:block;@extend %SmallFont;color:$Color-White;display:inline;}
+               i{display:block;@extend %SmallFont;width:55px;height:1px;background:$Color-White;@extend %center-block;}
+           }
+		}
+	}
+}
+
+/******************新闻详情********************/
+.inf_box{@extend %center-block;margin-top:20px;@include rolling-container(594px,420px);padding: 0 60px;
+    p{@include font-style($formSize,$Color-GrayForm,null,600);margin-bottom: 20px;text-indent: 2em;}
+    .inf_img{text-align:center;margin: 10px 0px;}
+}
+.inf_close_btn{@include position(0px,700px);}
+.inf_tip{text-align:center;margin-top: 25px;/*@include ellipsis;*/
+    h2{@include font-style($textSize,$Color-Black,null,600);}
+}
+/******************免责声明********************/
+.attesting_close_btn{@include position-right(15px,15px);}
+.attesting_bar{@extend %center-block;margin-top: 80px;@include rolling-container(698px,350px);}
+
+
+/******************参与有奖问答********************/
+.answer_close_btn{@include position(205px,-25px);}
+.answer_tip{@include position(43px,70px);}
+.answer_car{@include position(380px,100px);}
+/*************答题首页****************/
+.answer_home{display:block;
+   .answer_home_tip{@include position(140px,82px);}
+   .answer_gift{@include position(210px,202px);}
+   .joinno_btn{@include position(335px,262px);}
+   .join_btn{@include position(335px,130px);}
+}
+
+/*************答题一****************/
+.answer_modules1{display:none;}
+.answer_box{@include position(165px,15px);@include legacy-pie-clearfix();
+    .page_tip{padding-bottom: 20px;width:300px;@extend %center-block;text-align: center;
+        p{@include prefixer(transform,scale(1.2));font-size:13px\0;@extend %SmallFont;}
+    }
+    .modules2_tip{padding-bottom: 12px;}
+
+    .answer_des{width:138px;@include float();margin-left:85px;
+      label{@extend %SmallFont;cursor:pointer;font-size:12px\0}
+      input{@include inline-block;margin-right:5px;cursor:pointer;}
+    }
+    .answer_des.pub_answer{margin-left: 20px;}
+    .error_msg{@include position(110px,80px);display:none;
+      p{color:$Color-Yellow;}
+    }
+}
+.next_btn{@include position(304px,200px);}
+/*************答题二****************/
+.answer_modules2{display:none;}
+
+/*************答题三****************/
+.answer_modules3{display:none;}
+
+
+/*************答题留资****************/
+.answer_inf{display:none;}
+.answer_gift2{@include position(105px,440px);}
+.answer_inf_tip{@include position(128px,110px);}
+.submit_btn{@include position(320px,200px);}
+.answer_inf_box{@include horizontal-center(195px,350px);
+     .answer_inf_form{width: 350px;
+         .answer_inf_bar{@include legacy-pie-clearfix();width: 350px;
+             li{@include float();margin-bottom:24px;margin-right:15px;
+                   .answer_input{background:image-url('pop/answer/answer_input_bg.png') no-repeat;@include form-box($Font-Size12,25px,10px,$Color-GrayForm);}
+                    input{padding-left:10px;width:116px;}
+                    label{@include font-style($Font-Size12,$Color-Black,null);margin-right:5px;}
+                    select{width:126px;padding: 3px 0px;}
+                    span{@include inline-block;color:$Color-Black;@extend %SmallFont;font-size:12px\0;
+                      a{display:inline;text-decoration:underline;color:$Color-Red;}
+                    }
+                    input.check_set{width:auto;padding:0;}
+             }
+             li.attesting_checed{margin-top:-18px;width:auto;
+                   input{@include inline-block;margin-left: 8px;margin-right: 4px;}
+             }
+         }
+     }
+}
+
+
+/*************视频浮层****************/
+.video_des{width: $Width;height: $Height;}
+.video_float_btn{position: absolute;  bottom: 4%; right: 2%;
+  a{@include font-style($Font-Size24,$Color-White,null,600);}
+}

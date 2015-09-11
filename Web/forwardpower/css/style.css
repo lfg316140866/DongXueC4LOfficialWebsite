@@ -1,0 +1,8 @@
+﻿
+body {margin-top:0;margin-left:0;height:100%;width:100% !important;margin:0 auto;background-color:#ccc;}
+.warp{margin:0 auto;text-align:center;width:100%;}
+.logo{position:absolute;left:23%;}
+.bg{height:100%;width:100%;font-size:0;overflow:hidden;}
+.bg>img{width:100%;}
+.main{position:relative;width:1366px;margin:0 auto;-webkit-animation:media;}
+.video{position:absolute;top:1035px;left:490px;}

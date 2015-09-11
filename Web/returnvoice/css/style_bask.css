@@ -1,0 +1,42 @@
+﻿
+body {margin-top:0;margin-left:0;height:100%;width:100% !important;margin:0 auto;background-color:#ccc;}
+.warp{margin:0 auto;text-align:center;width:100%;}
+.logo{position:absolute;left:23%;}
+.bg{height:100%;width:100%;font-size:0;overflow:hidden;}
+.bg>img{width:100%;}
+.main{position:relative;width:1200px;margin:0 auto;-webkit-animation:media;}
+.joinbtn{position:absolute;top:360px;left:200px;}
+.liuzi{position:absolute;top:565px;left:735px;height:290px;width:373px;}
+.name{position:absolute;top: 0px;left: 50px;background:url(../images/namebox.jpg);height:31px;width:146px;}
+.inpname{position:absolute;height:31px;width:145px;top:0;left:0px;  background: transparent;  -webkit-appearance: none;font-size:20px;}
+.sexbox{position:absolute;height:31px;width:103px;top:0;left:255px;background:url(../images/sexbox.jpg);}
+.sex{position:absolute;height:31px;width:98px;font-size:20px;top:0;left:0;  background: transparent;  -webkit-appearance: none;}
+.phono{position:absolute;top: 45px;left: 50px;background:url(../images/phonobox.jpg);height:31px;width:300px;}
+.inpphono{position:absolute;height:31px;width:300px;top:0;left:0px;  background: transparent;  -webkit-appearance: none;font-size:20px;}
+.probox{position:absolute;top: 90px;left: 50px;background:url(../images/probox.jpg);height:31px;width:146px;}
+.pro{position:absolute;height:31px;width:140px;font-size:20px;top:0;left:0;  background: transparent;  -webkit-appearance: none;}
+.citybox{position:absolute;height:31px;width:103px;top:90px;left:255px;background:url(../images/sexbox.jpg);}
+.city{position:absolute;height:31px;width:98px;font-size:20px;top:0;left:0;  background: transparent;  -webkit-appearance: none;}
+.listbox{position:absolute;top: 135px;left: 50px;background:url(../images/list.jpg);height:31px;width:300px;}
+.list{position:absolute;height:31px;width:295px;font-size:20px;top:0;left:0;  background: transparent;  -webkit-appearance: none;}
+.checkbox{position:absolute;top:180px;left:0px;}
+.check2{position:absolute;top:0;left:0;display:none;}
+span{position:absolute;top: 180px;left: 30px;font-size: 15px;color: white;width:310px;text-align:left;}
+span>a{color:red;}
+.submitbtn{position:absolute;top:240px;left:50%;margin-left:-92px}
+.header_box{  width: 1200px;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  height: 40px;
+  background-color: #fff;
+  z-index: 12;
+  margin-left:-600px;
+}
+.home_logo{  float: left;
+  width: 108px;
+  height: 40px;}
+.title{  float: right;
+  width: 56px;
+  height: 40px;
+  margin-right: 10px;}

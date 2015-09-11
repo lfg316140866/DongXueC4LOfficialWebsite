@@ -1,0 +1,320 @@
+/*******************************************************************************************************
+* DateTime: 2015-08-05 03:12:10		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('VICTOR',' ','13918638623','  ','浙江省','杭州市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 03:12:16		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('VICTOR',' ','13918638623','  ','浙江省','杭州市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 03:26:48		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('VICTOR',' ','13918638623','  ','福建省','南平市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 03:43:36		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('VICTOR',' ','13918638623','  ','上海市','市辖区','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 09:11:55		IP: 58.246.85.98Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('测试',' ','18516152917','  ','北京市','市辖县','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 09:17:44		IP: 58.246.85.98Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('测试','男','18516152917','一周之内','浙江省','嘉兴市','海宁市','预约试驾','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 17:15:30		IP: 58.246.85.98Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('佟翔宇',' ','13918638623','  ','辽宁省','沈阳市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 17:46:20		IP: 58.246.85.98Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('佟翔宇',' ','13918638623','  ','贵州省','贵阳市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:23:19		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('cs','女','13845645645','','湖南省','长沙市','','湖南省裕和汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:23:24		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('cs','女','13845645645','','湖南省','长沙市','','湖南省裕和汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:23:42		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('cs','女','13845645645','','湖南省','长沙市','','湖南省裕和汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:23:50		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('大方','男','13554544444','一个月之内','辽宁省','抚顺市','望花区','预约试驾','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:24:12		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('的撒发生的飞','男','13254568885','一个月之内','河北省','保定市','清苑县','预约购车','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:24:15		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('cxc','男','13845645611','','河北省','保定市','','保定市中冀威龙汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:25:28		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('45',' ','13484561607','  ','江西省','萍乡市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:25:59		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('cxz','男','13845673464','','河南省','安阳市','','安阳市北方汽车贸易有限责任公司','','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:26:04		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('杜蕾斯看见',' ','13211125425','  ','内蒙古自治区','巴彦淖尔市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:26:30		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('xaxa','男','13984454534','','河北省','保定市','','保定轩宇风汽车有限公司','','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:27:21		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('zzz','男','13954456456','','河北省','保定市','','保定市中冀威龙汽车销售服务有限公司','否','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:27:34		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('zzz','男','13954456456','','河北省','保定市','','保定市中冀威龙汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:27:44		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('zzz','男','13954456456','','河北省','保定市','','保定市中冀威龙汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:29:00		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('zzz','女','13684546464','','海南省','海口市','','海南翔龙汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:29:12		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('zzz','女','13684546464','','海南省','海口市','','海南翔龙汽车销售服务有限公司','是','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:33:43		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('ddd','男','13454545454','','贵州省','贵阳市','','安顺恒信盛隆汽车销售服务有限公司','同意','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:33:54		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('ddd','男','13454545454','','贵州省','贵阳市','','安顺恒信盛隆汽车销售服务有限公司','不同意','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html#',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 18:36:56		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('广泛感 ',' ','13484561607','  ','陕西省','咸阳市','','有奖问答','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 19:35:18		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,cmn_createdate) 
+values('的顺丰','女','13545445455','','辽宁省','沈阳市','','辽宁万众汽车广场有限公司','同意','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 20:17:46		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,dealer_name,cmn_createdate) 
+values('','','','','','','','','','','','',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 20:21:05		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,dealer_name,cmn_createdate) 
+values('dsad','女','13464564564','','河南省','安阳市','','','同意','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html#Leaving','安阳市北方汽车贸易有限责任公司',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 22:08:25		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,dealer_name,cmn_createdate) 
+values('sdas','女','13645645645','','广西省','钦州市','','','同意','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html','',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 23:04:38		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,dealer_name,cmn_createdate) 
+values('郭庆','男','15221105523','','青海省','西宁市','','','同意','新C4L重返好声音','http://c4lnewwebsite.nn.cagoe.com/returnvoice/index.html','',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-05 23:06:01		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=AddTestDrive
+getFieldValue报错
+ select count(1) from (insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_site,disclaimer,site,source,dealer_name,cmn_createdate) 
+values('胡荣庆','男','13622533211','两周之内','湖北省','武汉市','武昌区','预约购车','是','C4L新官网-PC','http://c4lnewwebsite.nn.cagoe.com/','',now()) ) cmn_main_table 
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into usr_test_drive(name,sex,phone,car_time,province,city,county,drive_si' at line 1
+*******************************************************************************************************/
+

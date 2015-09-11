@@ -1,0 +1,475 @@
+/*******************************************************************************************************
+* DateTime: 2015-08-04 18:28:11		IP: 180.175.171.141Brower: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?CurUserFormID=23&method=AddRec
+insert into inf_news (  `title` ,   `introdution` ,   `content` ,   `news_type` ,   `pic_url` ,   `news_time` ,   `sort_id` ,   `memo` , cmn_modifydate,cmn_lastuserid,cmn_createdate,cmn_createuserid) values (   #str90# ,   #str91# ,   #str92# ,   #str93# ,   #str94# ,   null ,   null ,   null , now(),#str95#,now(),#str96# ) ; select last_insert_id()
+-------------
+Data too long for column 'introdution' at row 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 18:28:27		IP: 180.175.171.141Brower: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?CurUserFormID=23&method=AddRec
+insert into inf_news (  `title` ,   `introdution` ,   `content` ,   `news_type` ,   `pic_url` ,   `news_time` ,   `sort_id` ,   `memo` , cmn_modifydate,cmn_lastuserid,cmn_createdate,cmn_createuserid) values (   #str90# ,   #str91# ,   #str92# ,   #str93# ,   #str94# ,   null ,   null ,   null , now(),#str95#,now(),#str96# ) ; select last_insert_id()
+-------------
+Data too long for column 'introdution' at row 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 21:54:19		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 21:54:19		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 21:54:22		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=DBGetResultSet
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc  limit 10 
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 21:59:47		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 21:59:47		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:06:40		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:06:40		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:08:08		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:08:08		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:08:10		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:08:10		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:08:20		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:08:20		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:12:26		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:12:26		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:13:25		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:13:25		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:14:36		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:14:36		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:14:49		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:14:49		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:15:04		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:15:04		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:18		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=2&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:18		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=2&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 3,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:18		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=3&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:18		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=3&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 6,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:19		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=4&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:19		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=4&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 9,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:35		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=5&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:35		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=5&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 12,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:37		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=4&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:37		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=4&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 9,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:37		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=3&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:37		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=3&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 6,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:38		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=2&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:38		IP: 58.40.47.68Brower: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=2&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 3,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:58		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:17:58		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:21:10		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:21:10		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:28:42		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:28:43		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:40:06		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:40:06		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:42:30		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:42:30		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:44:38		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:44:38		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido&CurPage=1&PageSize=3
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc limit 0,3
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:46:38		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido
+getFieldValue报错
+ select count(1) from (select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0) cmn_main_table 
+-------------
+Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-08-04 22:46:38		IP: 58.40.47.68Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2471.0 Safari/537.36
+* Url : http://c4lnewwebsite.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=GetVeido
+getResultSet错误
+select vodeo_id,vodeo_desc,name,video_pic,video_url from inf_video where is_show=1 and type=0 order by sort_id desc
+-------------
+错误号：1054错误信息：Unknown column 'vodeo_id' in 'field list'
+*******************************************************************************************************/
+

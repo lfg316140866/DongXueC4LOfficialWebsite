@@ -1,0 +1,1631 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no;" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/pop.css" rel="stylesheet" />
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="css/scene.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <link href="css/font.css" rel="stylesheet" />
+    <!--<script src="images/load.png" lazypath="Js/jquery-1.9.1.min.js"></script>-->
+    <script src="Js/ThirdLib/jquery.js"></script>
+    <script src="Js/jquery.easing.min.js"></script>
+    <script src="Js/Cmn.js"></script>
+    <script>
+        if (Cmn.Func.IsMobile()) {
+            var str = location.href;
+            if (str.indexOf("?") > 0) {
+                var num = str.indexOf("?")
+                str = str.substr(num + 1);
+                window.location.href = "Mobile/?" + str;
+            }
+            else {
+                window.location.href = "Mobile/"
+            }
+        }
+
+    </script>
+    <script src="Js/CmnAjax.js"></script>
+    <script src="Js/animate/AnimateMan.js"></script>
+    <script src="Js/animate/ScenesSwitch.js"></script>
+    <script src="Js/animate/Scenes.js"></script>
+    <script src="Js/animate/AnimateFrame.js"></script>
+    <script src="Js/animate/BasAnimate.js"></script>
+    <script src="Js/jquery.mCustomScrollbar.js"></script>
+    <script src="Manage/Js/SiteConfig.js"></script>
+    <script src="Js/CmnFuncExd.js"></script>
+    <script src="Js/WechatShare.js"></script>
+    <script src="Js/Dx.js"></script>
+    <script src="Js/SiteJs/SiteFunc.js"></script>
+    <script src="Js/SiteJs/provinceCity.js"></script>
+    <script src="Js/jquery.cycle.all.js"></script>
+    <script src="Js/jquery.mousewheel.min.js"></script>
+    <script src="Js/spritespin.js"></script>
+    <script src="Js/CmnTools/VideoPlayer/VideoProcess.js"></script>
+    <script src="Js/SiteJs/Public.js"></script>
+    <script src="Js/SiteJs/Index.js"></script>
+    <script src="Js/SiteJs/Site.js"></script>
+    <title>东风雪铁龙新C4L产品网站</title>
+    <script type="text/javascript">
+        var _smq = _smq || [];
+        _smq.push(['_setAccount', 'c29d8d', new Date()]);
+        _smq.push(['pageview']);
+
+        (function () {
+            var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+            sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/sm.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+        })();
+        (function () {
+            var mz = document.createElement('script');
+            mz.type = 'text/javascript'; mz.async = true; mz.src = 'http://js.miaozhen.com/t.js';
+            var t = document.getElementsByTagName('script')[0];
+            t.parentNode.insertBefore(mz, t);
+        })();
+    </script>
+
+</head>
+<body>
+
+    <!--LoadingWrap-->
+    <div class="LoadingWrap">
+        <div class="LoadingInner">
+            <div class="LoadingText"><img src="images/public/LoadingText.png" /></div>
+            <div class="LoadingBg">
+                <img class="LoadingBgImg" src="images/bg/LoadingBg.jpg" />
+                <div class="LoadingCar">
+                    <img class="load_car" src="images/public/load_car.png" />
+                    <div class="load_line"><img src="images/public/load_line1.png"><div class="load_circle"></div></div>
+                </div>
+                <div class="LoadingNum">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Wrap cmn-AnimteFrameContainer">
+        <div class="Main cmn-ScenesContainer">
+            <!--首页-->
+            <div class="cmn-Scenes PublicScenes home" id="home">
+                <div class="Bg" mintop="-6"><img src="images/load.png" lazypath="images/bg/home_bg.jpg" /></div>
+                <div class="Inner JscInner" jinner="-4">
+                    <div class="home_box JscHomeBox">
+                        <div class="home_sidebar ">
+                            <ul class="home_nav JscHomeKV">
+                                <li class="JscHomeKVList"><a style="" class="dat-link-href dat-style-style JscHomeKVListImg" href="javascript:void(0)" target="{target}"><img class="dat-pc_kv-src" src="images/load.png" /></a></li>
+                            </ul>
+                        </div>
+                        <!--<div class="home_lfarrow JscLeft"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/home_lfarrow.png" /></a></div>
+            <div class="home_rlarrow JscRight"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/home_rlarrow.png" /></a></div>-->
+                    </div>
+                    <div class="home_carousel JscHomeCarousel">
+                        <!--选中添加carousel_set-->
+                        <!--<a class="carousel_des carousel_set" href="javascript:void(0)"></a>
+            <a class="carousel_des" href="javascript:void(0)"></a>
+            <a class="carousel_des" href="javascript:void(0)"></a>-->
+                    </div>
+                </div>
+                <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+            </div>
+
+            <!--澎湃动力-动力家族-->
+            <div class="cmn-Scenes PublicScenes power_family" id="power_family">
+                <div class="Bg" mintop="-5"><img src="images/load.png" lazypath="images/bg/power_family_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="power_family_tip box_img cmn-animate" cfg="{action:[{styles:{'left':'18.5%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath="images/content/taster/dynamic/family/power_family_tip.png" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+
+            <!--澎湃动力，1.2T高效动力-->
+            <div class="cmn-Scenes PublicScenes page1" id="page1">
+                <div class="Bg" mintop="-7"><img src="images/load.png" lazypath="images/bg/1.2tdynamicsbg.jpg" /></div>
+                <div class="Inner">
+                    <div class="page_warp">
+                        <div class="dynamics">
+                            <div class="page1_tline1">
+                                <img src="images/load.png" lazypath="images/content/taster/dynamic/family/1.2tline.png" class="publicimg" />
+                            </div>
+                            <div class="page1_img cmn-animate" cfg="{action:[{styles:{'width':'13%'},speed:700},{styles:{'width':'14%'},speed:700}],loop:1,index:2}">
+                                <img src="images/load.png" lazypath="images/content/taster/dynamic/family/1.2img.png" class="publicimg" />
+                            </div>
+                            <div class="dynamicstext1 cmn-animate" cfg="{action:[{styles:{'top':'17%'},speed:900}],loop:0,index:1}">
+                                <img src="images/load.png" lazypath="images/content/taster/dynamic/family/1.2tdynamicstext.png" class="publicimg" />
+                            </div>
+                            <div class="graph1">
+                                <img src="images/load.png" lazypath="images/content/taster/dynamic/family/1.2tgraph.png" class="publicimg" />
+                            </div>
+                            <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--澎湃动力，1.6T高效动力-->
+            <div class="cmn-Scenes PublicScenes page2" id="page2">
+                <div class="Bg" mintop="-10"><img src="images/load.png" lazypath="images/bg/1.6tdynamicsbg.jpg" /></div>
+                <div class="Inner">
+                    <div class="page_warp">
+                        <div class="dynamics">
+                            <div class="page1_tline2">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.6tline.png" class="publicimg" />
+                            </div>
+                            <div class="page2_img cmn-animate" cfg="{action:[{styles:{'width':'29.2%'},speed:700},{styles:{'width':'29.5%'},speed:500}],loop:1,index:2}">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.6img.png" class="publicimg" />
+                            </div>
+                            <div class="dynamicstext2 cmn-animate" cfg="{action:[{styles:{'top':'6%'},speed:900}],loop:0,index:1}">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.6tdynamicstext.png" class="publicimg" />
+                            </div>
+                            <div class="graph2">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.6tgraph.png" class="publicimg" />
+                            </div>
+                            <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--澎湃动力，1.8T高效动力-->
+            <div class="cmn-Scenes PublicScenes page3" id="page3">
+                <div class="Bg" mintop="-8"><img src="images/load.png" lazypath="images/bg/1.8tdynamicsbg.jpg" /></div>
+                <div class="Inner">
+                    <div class="page_warp">
+                        <div class="dynamics">
+                            <div class="page1_tline3">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.8tline.png" class="publicimg" />
+                            </div>
+                            <div class="page3_img cmn-animate" cfg="{action:[{styles:{'width':'22.6%'},speed:700},{styles:{'width':'23%'},speed:700}],loop:1,index:2}">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.8img.png" class="publicimg" />
+                            </div>
+                            <div class="dynamicstext3 cmn-animate" cfg="{action:[{styles:{'left':'22%'},speed:900}],loop:0,index:1}">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.8tdynamicstext.png" class="publicimg" />
+                            </div>
+                            <div class="graph3">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/family/1.8tgraph.png" class="publicimg" />
+                            </div>
+                            <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--澎湃动力STT-->
+            <div class="cmn-Scenes PublicScenes STT" id="STT">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg/STT_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="stt_tip cmn-animate box_img" cfg="{action:[{styles:{'left':'12%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/dynamic/stt_tip.png" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--澎湃动力-卓越操控-->
+            <div class="cmn-Scenes PublicScenes excellent_control" id="excellent_control">
+                <div class="Bg" mintop="-15"><img src="images/load.png" lazypath="images/bg/excellent_control_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="excellent_control_tip box_img cmn-animate" cfg="{action:[{styles:{'left':'15.5%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images//content/taster/dynamic/manipulation/excellent_control_tip.png" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--6大操控，稳定程序-->
+            <div class="cmn-Scenes PublicScenes page4" id="page4">
+                <div class="Inner" style="top:-8%;">
+                    <div class="page_warp">
+                        <!--背景汽车一-->
+                        <div>
+                            <img src="images/load.png" lazypath2="images/bg/manipulationbg2.jpg" class="publicimg" />
+                        </div>
+                        <!--背景汽车二-->
+                        <div class="manipulationbg3">
+                            <img src="images/load.png" lazypath2="images/bg/manipulationbg4.jpg" class="publicimg" />
+
+                        </div>
+                        <!---->
+                        <div class="manipulationbg">
+                            <div class="topleftline">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/manipulation/topleftline.png" class="publicimg" />
+                            </div>
+                            <div class="manipulationtext cmn-animate" cfg="{action:[{styles:{'left':'12.5%'},speed:900}],loop:0,index:1}">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/manipulation/manipulationtext.png" class="publicimg" />
+                            </div>
+                        </div>
+                        <!--<div class="bottom_text box_img cmn-animate" cfg="{action:[{styles:{'left':'13%'},speed:900}],loop:0,index:1}">
+                            <img src="images/load.png" lazypath="images/content/taster/dynamic/manipulation/bottom_text.png" class="publicimg" />
+                        </div>-->
+
+                        <div class="arrow_btn Jsc_arrow_btn cmn-animate" style="bottom:-4%;" cfg="{action:[{styles:{'bottom':'-3%'},speed:700},{styles:{'bottom':'-4%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    </div>
+
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="manipulation_bottomtext">
+                            <img src="images/load.png" lazypath="images/content/taster/dynamic/manipulation/manipulation_bottomtext.png" class="publicimg" />
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--D型多功能集控真皮赛车方向盘-->
+            <div class="cmn-Scenes PublicScenes page5" id="page5">
+                <div class="Inner">
+                    <div>
+                        <!--方向盘背景-->
+                        <div class="manipulation_Steeringbg">
+                            <img src="images/load.png" lazypath="images/bg/manipulation_Steeringbg.jpg" class="publicimg" />
+                            <div class="steering_bottomtext1 box_img cmn-animate" cfg="{action:[{styles:{'left':'10%'},speed:900}],loop:0,index:1}">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/manipulation/steering_bottomtext1.png" class="publicimg" />
+                            </div>
+                        </div>
+                        <!--<div class="steering_bottomtext1 box_img cmn-animate" cfg="{action:[{styles:{'left':'10%'},speed:900}],loop:0,index:1}">
+
+                        </div>-->
+                        <!--变速箱背景-->
+                        <div class="manipulation_Steeringbg2">
+                            <img src="images/load.png" lazypath2="images/bg/manipulation_Steeringbg2.jpg" class="publicimg" />
+                            <div class="steering_bottomtext2 box_img cmn-animate" cfg="{action:[{styles:{'left':'62.5%'},speed:900}],loop:0,index:1}">
+                                <img src="images/load.png" lazypath2="images/content/taster/dynamic/manipulation/steering_bottomtext2.png" class="publicimg" />
+                            </div>
+                        </div>
+
+                        <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                        <!--页脚图片-->
+                        <!--<div class="bottomimg">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                            <div class="bottomimgicon">
+                                <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                            </div>-->
+                        <!--页脚文字-->
+                        <!--<div class="steering_bottomtext">
+                            <img src="images/load.png" lazypath="images/content/taster/dynamic/manipulation/steering_bottomtext.png" class="publicimg" />
+                        </div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+
+            <!--人性科技-智能-->
+            <div class="cmn-Scenes PublicScenes intelligence" id="intelligence">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg/intelligence_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="intelligence_tip box_img cmn-animate" cfg="{action:[{styles:{'left':'52%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/intelligence_tip.png" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+
+            </div>
+
+            <!--车载互联系统-->
+            <div class="cmn-Scenes PublicScenes page6" id="page6">
+                <div class="Inner JscInner" jinner="-5">
+                    <div class="smartbg">
+                        <img src="images/load.png" lazypath="images/bg/smartbg.jpg" class="publicimg" />
+                    </div>
+
+                    <!--<div class="smart_internetsystemline">
+            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_internetsystemline.png" class="publicimg" />
+        </div>-->
+                    <!--车载系统文字-->
+                    <!--<div class="smart_internetsystemtext cmn-animate" cfg="{action:[{styles:{'left':'25.5%'},speed:900}],loop:0,index:1}">
+            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_internetsystemtext.png" class="publicimg" />
+        </div>-->
+                    <!--手-->
+                    <!--<div class="smart_gesture JscSmartGesture">
+            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_gesture.png" class="publicimg" />
+        </div>-->
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'0%'},speed:700},{styles:{'bottom':'1%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+            <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+            <div class="bottomimgicon">
+                <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+            </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="smart_bottomtext">
+                <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/smart_bottomtext.png" class="publicimg" />
+            </div>
+        </div>-->
+                </div>
+            </div>
+
+            <!--一键启动-->
+            <div class="cmn-Scenes PublicScenes page7" id="page7">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg/startbg.jpg" /></div>
+                <div class="Inner">
+                    <div class="Startbg_gesture JscStartbgGesture">
+                        <img src="images/load.png" lazypath2="images/bg/startbg2.jpg" class="publicimg" />
+                        <!--光圈-->
+                        <div class="smart_aperture cmn-animate" cfg="{action:[{styles:{'width':'12%','left':'47%'},speed:700},{styles:{'width':'12.5%','left':'46.5%'},speed:700}],loop:1,index:2}">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_aperture.png" class="publicimg" />
+                        </div>
+                        <!--透明手势-->
+                        <div class="smart_cleargesture">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_cleargesture.png" class="publicimg" />
+                        </div>
+                        <div class="start_bottomtext1 box_ing cmn-animate" cfg="{action:[{styles:{'bottom':'25%'},speed:900}],loop:0,index:1}">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/start_bottomtext1.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>
+                        <!--页脚文字-->
+                    <!--div class="start_bottomtext">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/start_bottomtext.png" class="publicimg" />
+                    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--智能免匙-->
+            <div class="cmn-Scenes PublicScenes page8" id="page8">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/smart_keylessbg.jpg" /></div>
+                <div class="Inner">
+                    <!--左边箭头-->
+                    <div class="keyless cmn-animate" cfg="{action:[{styles:{'left':'48%'},speed:900},{styles:{'left':'45%'},speed:900}],loop:1,index:2}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/keyless_leftarrow.png" class="publicimg" />
+                    </div>
+                    <!--右边箭头-->
+                    <div class="keyless cmn-animate" cfg="{action:[{styles:{'left':'48%'},speed:900},{styles:{'left':'51%'},speed:900}],loop:1,index:2}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/keyless_rightarrow.png" class="publicimg" />
+                    </div>
+                    <div class="keyless cmn-animate" cfg="{action:[{styles:{'width':'26%','left':'48%'},speed:700},{styles:{'width':'27%','left':'47.5%'},speed:700}],loop:1,index:2}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/keyless_round.png" class="publicimg" />
+                    </div>
+                    <div class="keylesstext1 box_ing cmn-animate" cfg="{action:[{styles:{'left':'72%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/keylesstext1.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="manipulation_bottomtext">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/keylesstext.png" class="publicimg" />
+                    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--智能空调系统-->
+            <div class="cmn-Scenes PublicScenes page9" id="page9">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/smart_conditionedbg.jpg" /></div>
+                <div class="Inner">
+                    <div class="smart_conditionedbg2">
+                        <img src="images/load.png" lazypath2="images/bg/smart_conditionedbg2.jpg" class="publicimg" />
+                    </div>
+                    <!--页面文字-->
+                    <div class="smart_conditionedtext cmn-animate" cfg="{action:[{styles:{'left':'16.5%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_conditionedtext.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                            <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/smart_conditionedbtmtxt.png" class="publicimg" />
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--炮筒式炫彩智能组合仪表-->
+            <div class="cmn-Scenes PublicScenes page10" id="page10">
+                <!--<div class="Bg"><img src="images/load.png" lazypath="images/bg/1.8tdynamicsbg.jpg" /></div>-->
+                <div class="Inner">
+                    <div class="startbg1">
+                        <img src="images/load.png" lazypath2="images/bg/smart_meterbg1.jpg" class="publicimg" />
+                        <!--第一个背景上的彩色文字-->
+                        <div class="smart_metertext1 cmn-animate" cfg="{action:[{styles:{'left':'52.5%'},speed:700}],loop:0,index:1}">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_metertext1.png" class="publicimg" />
+                        </div>
+                    </div>
+
+                    <div class="startbg2 JscStartbgBright">
+                        <img src="images/load.png" lazypath2="images/bg/smart_meterbg2.jpg" class="publicimg" />
+                        <!--第二个背景上的彩色文字-->
+                        <div class="smart_metertext1 cmn-animate" cfg="{action:[{styles:{'left':'52.5%'},speed:700}],loop:0,index:1}">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_metertext2.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <!--第三个背景图片-->
+                    <div class="startbg3">
+                        <img src="images/load.png" lazypath2="images/bg/smart_meterbg3.jpg" class="publicimg" />
+                        <!--第三个背景上的彩色文字-->
+                        <div class="smart_metertext1 cmn-animate" cfg="{action:[{styles:{'left':'52.5%'},speed:700}],loop:0,index:1}">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_metertext3.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <div class="smart_metercolortext">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_metercolortext.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                            <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/start_meterbtmtxt.png" class="publicimg" />
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--7英寸彩色智能多媒体触屏系统-->
+            <div class="cmn-Scenes PublicScenes page11" id="page11">
+                <!--<div class="Bg"><img src="images/load.png" lazypath="images/bg/1.8tdynamicsbg.jpg" /></div>-->
+                <div class="Inner">
+                    <div>
+                        <img src="images/load.png" lazypath2="images/bg/smart_touchbg.jpg" class="publicimg" />
+                    </div>
+                    <div class="smart_touchbtmtxt1 box_ing cmn-animate" cfg="{action:[{styles:{'left':'11%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_touchbtmtxt1.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/smart_touchbtmtxt.png" class="publicimg" />
+                    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--带加热和折叠功能外后视镜-->
+            <div class="cmn-Scenes PublicScenes page12" id="page12">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/smart_mirror.jpg" /></div>
+                <div class="Inner">
+                    <!--左边箭头-->
+                    <div class="keyless2 cmn-animate" cfg="{action:[{styles:{'left':'31%'},speed:900},{styles:{'left':'28%'},speed:900}],loop:1,index:2}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/keyless_leftarrow.png" class="publicimg" />
+                    </div>
+                    <!--右边箭头-->
+                    <div class="keyless2 cmn-animate" cfg="{action:[{styles:{'left':'31%'},speed:900},{styles:{'left':'34%'},speed:900}],loop:1,index:2}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/keyless_rightarrow.png" class="publicimg" />
+                    </div>
+                    <div class="keyless2 cmn-animate" cfg="{action:[{styles:{'width':'26%','left':'31%'},speed:700},{styles:{'width':'27%','left':'30.5%'},speed:700}],loop:1,index:2}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/keyless_round.png" class="publicimg" />
+                    </div>
+                    <div class="smart_mirrorbtmtxt1 box_img cmn-animate" cfg="{action:[{styles:{'left':'12%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/smartphone/smart_mirrorbtmtxt1.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/smartphone/smart_mirrorbtmtxt.png" class="publicimg" />
+                    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--人性科技-舒适-->
+            <div class="cmn-Scenes PublicScenes comfortable" id="comfortable">
+                <div class="Bg" mintop="-4"><img src="images/load.png" lazypath2="images/bg/comfortable_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="comfortable_tip box_img cmn-animate" cfg="{action:[{styles:{'left':'52%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/comfortable_tip.png" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--2710mm超长轴距-->
+            <div class="cmn-Scenes PublicScenes page13" id="page13">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/cozy_longcarbg1.jpg" /></div>
+                <div class="Inner">
+                    <div class="cozy_longcar">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_longcar.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'3%'},speed:700},{styles:{'bottom':'4%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                            <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_longbtmtxt.png" class="publicimg" />
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--17英寸动感铝合金轮毂-->
+            <div class="cmn-Scenes PublicScenes page14" id="page14">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/cozy_17tirebg.jpg" /></div>
+                <div class="Inner">
+                    <!--线条-->
+                    <div class="cozy_tire_line">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_tire_line.png" class="publicimg" />
+                    </div>
+                    <!--页脚小轮胎-->
+                    <div class="cozy_tiremin JscMinTires">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_tiremin.png" class="publicimg" />
+                    </div>
+                    <div class="JscMaxTires" style="display:none;">
+                        <!--大轮胎-->
+                        <div class="cozy_tire">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_tire.png" class="publicimg" />
+                        </div>
+                        <div class="cozy_tire_close JscTireClose">
+                            <img src="images/load.png" lazypath2="images/pop/msg_close_btn.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <div class="cozy_17btmtxt1 box_img cmn-animate" cfg="{action:[{styles:{'left':'13%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_17btmtxt1.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_17btmtxt.png" class="publicimg" />
+                    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--360全舒适“尊贵座舱”-->
+            <div class="cmn-Scenes PublicScenes page15" id="page15">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/cozy_cockpit.jpg" /></div>
+                <div class="Inner">
+                    <!--尊贵座舱文字-->
+                    <div class="smart_conditionedtext cmn-animate" cfg="{action:[{styles:{'left':'16.5%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_cockpitext.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_360btmtxt.png" class="publicimg" />
+                    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--后排航空式睡眠头枕-->
+            <div class="cmn-Scenes PublicScenes page16" id="page16">
+                <!--<div class="Bg"><img src="images/load.png" lazypath="images/bg/1.8tdynamicsbg.jpg" /></div>-->
+                <div class="Inner">
+                    <div class="cozy_headrest1">
+                        <img src="images/load.png" lazypath2="images/bg/cozy_headrest2.jpg" class="publicimg" />
+                    </div>
+                    <div class="cozy_headrest2">
+                        <img src="images/load.png" lazypath2="images/bg/cozy_headrest.jpg" class="publicimg" />
+                    </div>
+                    <div class="cozy_headrestbtmtxt1 box_img cmn-animate" cfg="{action:[{styles:{'left':'17%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_headrestbtmtxt1.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                        <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_headrestbtmtxt.png" class="publicimg" />
+                    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--舒适-Driver First-->
+            <div class="cmn-Scenes PublicScenes page17" id="page17">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/cozy_drivebg.jpg" class="publicimg" /></div>
+                <div class="Inner">
+                    <div class="cozy_drivetext cmn-animate" cfg="{action:[{styles:{'left':'28%'},speed:700}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_drivetext.png" class="publicimg" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--页脚图片-->
+                    <!--<div class="bottomimg">
+                        <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                        <div class="bottomimgicon">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                        </div>-->
+                    <!--页脚文字-->
+                    <!--<div class="steering_bottomtext">
+                            <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_drivebtmtxt.png" class="publicimg" />
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--过渡页-->
+            <div class="cmn-Scenes PublicScenes page18" id="page18">
+                <!--<div class="Bg"><img src="images/load.png" lazypath="images/bg/cozy_drivebg.jpg" /></div>-->
+                <div class="Inner">
+                    <!--第一个背景-->
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+
+                    <div class="cozy_trimbg1 box_img">
+
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_trimbg2.jpg" class="publicimg" />
+                        <div class="cozy_trimbtmtxt21 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_trimbtmtxt21.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <!--第三个背景-->
+                    <div class="cozy_trimbg2">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_gloveboxbg.jpg" class="publicimg" />
+                        <div class="cozy_glovebtmtxt1 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_glovebtmtxt1.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <!--第四个背景-->
+                    <div class="cozy_trimbg3">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_storagebg.jpg" class="publicimg" />
+                        <div class="cozy_storagebtmtxt1 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_storagebtmtxt1.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <!--第五个背景-->
+                    <div class="cozy_trimbg4">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_ventbg.jpg" class="publicimg" />
+                        <div class="cozy_ventbtmtxt1 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_ventbtmtxt1.png" class="publicimg" />
+                        </div>
+                    </div>
+                    <!--第六个背景-->
+                    <div class="cozy_trimbg5">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_decorativebg.jpg" class="publicimg" />
+                        <div class="cozy_decorativebtmtxt1 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_decorativebtmtxt1.png" class="publicimg" />
+                        </div>
+                        <!--页脚图片-->
+                        <!--<div class="bottomimg JscBottomimg botton_animate">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                            <div class="bottomimgicon">
+                                <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                            </div>
+                            <div class="cozy_trimbtmtxt2 JscCozyTrimbtmtxtList">
+                                <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_decorativebtmtxt.png" class="publicimg" />
+                            </div>
+                        </div>-->
+                    </div>
+                    <!--第七个背景-->
+                    <div class="cozy_trimbg6">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_doorknobbg.jpg" class="publicimg" />
+                        <div class="cozy_doorknobbtmtxt1 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_doorknobbtmtxt1.png" class="publicimg" />
+                        </div>
+                        <!--页脚图片-->
+                        <!--<div class="bottomimg JscBottomimg botton_animate">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                            <div class="bottomimgicon">
+                                <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                            </div>
+                            <div class="cozy_trimbtmtxt2 JscCozyTrimbtmtxtList">
+                                <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_doorknobbtmtxt.png" class="publicimg" />
+                            </div>
+                        </div>-->
+                    </div>
+                    <!--第八个背景-->
+                    <div class="cozy_trimbg7">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_reardoorbg.jpg" class="publicimg" />
+                        <div class="cozy_reatdoorbtmtxt1 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_reatdoorbtmtxt1.png" class="publicimg" />
+                        </div>
+                        <!--页脚图片-->
+                        <!--<div class="bottomimg JscBottomimg botton_animate">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                            <div class="bottomimgicon">
+                                <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                            </div>
+                            <div class="cozy_trimbtmtxt1 JscCozyTrimbtmtxtList">
+                                <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_reatdoorbtmtxt.png" class="publicimg" />
+                            </div>
+                        </div>-->
+                    </div>
+                    <!--第九个背景-->
+                    <div class="cozy_trimbg8">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_glassescase.jpg" class="publicimg" />
+                        <div class="cozy_glassesbtmtxt1 box_img">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_glassesbtmtxt1.png" class="publicimg" />
+                        </div>
+                        <!--页脚图片-->
+                        <!--<div class="bottomimg JscBottomimg botton_animate">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                            <div class="bottomimgicon">
+                                <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                            </div>
+                            <div class="cozy_trimbtmtxt2 JscCozyTrimbtmtxtList">
+                                <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_glassesbtmtxt.png" class="publicimg" />
+                            </div>
+                        </div>-->
+                    </div>
+                    <!--第十个-->
+                    <div class="cozy_trimbg9">
+                        <img class="JscCozy_trimbg" src="images/load.png" lazypath2="images/bg/cozy_trunkbg.jpg" class="publicimg" />
+                        <div class="cozy_trunkbtmtxt1 box_img cmn-animate" cfg="{action:[{styles:{'left':'22.5%'},speed:900}],loop:0,index:1}">
+                            <img src="images/load.png" lazypath2="images/content/taster/technology/comfortable/cozy_trunkbtmtxt1.png" class="publicimg" />
+                        </div>
+                        <!--页脚图片-->
+                        <!--<div class="bottomimg JscBottomimg botton_animate">
+                            <img src="images/load.png" lazypath="images/content/taster/bottomimg.png" class="publicimg" />
+                            <div class="bottomimgicon">
+                                <img src="images/load.png" lazypath="images/content/taster/bottomimgicon.png" class="publicimg" />
+                            </div>
+                            <div class="cozy_trimbtmtxt1 JscCozyTrimbtmtxtList">
+                                <img src="images/load.png" lazypath="images/content/taster/technology/comfortable/cozy_trunkbtmtxt.png" class="publicimg" />
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <!--人性科技-安全-->
+            <div class="cmn-Scenes PublicScenes safety" id="safety">
+                <div class="Bg" mintop="-5"><img src="images/load.png" lazypath2="images/bg/safety_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="safety_title box_img cmn-animate" cfg="{action:[{styles:{'bottom':'19%'},speed:900}],loop:0,index:1}">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/security/safety_title.png" />
+                    </div>
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--------------------------品鉴C4L人性科技(安全)--------------------------->
+            <!--值得信赖的五星安全-->
+            <div class="cmn-Scenes PublicScenes page24" id="page24">
+                <div class="Bg" mintop="-7"><img src="images/load.png" lazypath2="images/bg/five_star_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--<div class="five_star_tip box_tip box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/five_star_tip.png" /></div>-->
+                    <div class="five_star_text box_img cmn-animate" style="top:13%" cfg="{action:[{styles:{'left':'14%'},speed:900}],loop:0,index:1}"><img src="images/load.png" lazypath="images/content/taster/technology/security/five_star_text.png" /></div>
+                </div>
+            </div>
+
+            <!--“太空舱”立体防护车身-->
+            <div class="cmn-Scenes PublicScenes page25" id="page25">
+                <div class="Bg" mintop="-8"><img src="images/load.png" lazypath2="images/bg/car_body_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <!--<div class="car_body_tip box_tip box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/car_body_tip.png" /></div>-->
+                    <div class="car_body_text box_img cmn-animate" cfg="{action:[{styles:{'left':'15%'},speed:900}],loop:0,index:1}"><img src="images/load.png" lazypath="images/content/taster/technology/security/car_body_text.png" /></div>
+                    <div class="light_drop1 box_img"><img src="images/load.png" lazypath2="images/content/taster/technology/security/light_drop1.png" /></div>
+                    <div class="light_drop2 box_img"><img src="images/load.png" lazypath2="images/content/taster/technology/security/light_drop2.png" /></div>
+                    <div class="light_drop3 box_img"><img src="images/load.png" lazypath2="images/content/taster/technology/security/light_drop3.png" /></div>
+                    <div class="light_drop4 box_img"><img src="images/load.png" lazypath2="images/content/taster/technology/security/light_drop4.png" /></div>
+                    <div class="drop_btn box_img drop_btn1 cmn-animate" cfg="{action:[{styles:{'width':'2%','left':'23.5%'},speed:700},{styles:{'width':'2.5%','left':'23%'},speed:700}],loop:1,index:2}"><img src="images/load.png" lazypath="images/content/taster/technology/security/drop_btn.png" /></div>
+                    <div class="drop_btn box_img drop_btn2 cmn-animate" cfg="{action:[{styles:{'width':'2%','left':'51%'},speed:700},{styles:{'width':'2.5%','left':'50.5%'},speed:700}],loop:1,index:2}"><img src="images/load.png" lazypath="images/content/taster/technology/security/drop_btn.png" /></div>
+                    <div class="drop_btn box_img drop_btn3 cmn-animate" cfg="{action:[{styles:{'width':'2%','left':'75%'},speed:700},{styles:{'width':'2.5%','left':'74.5%'},speed:700}],loop:1,index:2}"><img src="images/load.png" lazypath="images/content/taster/technology/security/drop_btn.png" /></div>
+                    <div class="drop_btn box_img drop_btn4 cmn-animate" cfg="{action:[{styles:{'width':'2%','left':'62%'},speed:700},{styles:{'width':'2.5%','left':'61.5%'},speed:700}],loop:1,index:2}"><img src="images/load.png" lazypath="images/content/taster/technology/security/drop_btn.png" /></div>
+                </div>
+            </div>
+
+            <!--“All around body”6安全气囊-->
+            <div class="cmn-Scenes PublicScenes page26" id="page26">
+                <div class="Bg" mintop="-10"><img src="images/load.png" lazypath2="images/bg/safety_bag_bg.jpg" /></div>
+                <div class="Inner">
+                    <!--<div class="safety_tip box_tip box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/safety_tip.png" /></div>-->
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <div class="safety_text box_img cmn-animate" cfg="{action:[{styles:{'left':'17%'},speed:900}],loop:0,index:1}"><img src="images/load.png" lazypath="images/content/taster/technology/security/safety_text.png" /></div>
+                </div>
+            </div>
+
+            <!--“压力直感”胎压监测系统-->
+            <div class="cmn-Scenes PublicScenes page27" id="page27">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/monitor_bg.jpg" /></div>
+                <div class="monitor_one JscMonitorOne box_img" style="width:75%">
+                    <img src="images/load.png" lazypath2="images/content/taster/technology/security/monitor_bg3.png" />
+                    <div class="bottom_2 box_img cmn-animate">
+                        <img src="images/load.png" lazypath2="images/content/taster/technology/security/bottom_2.png" class="publicimg" />
+                    </div>
+                </div>
+                <div class="Inner">
+                    <!--<div class="monitor_tip box_tip box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/monitor_tip.png" /></div>-->
+
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--防眩目内后视镜/可视倒车系统-->
+            <div class="cmn-Scenes PublicScenes page28" id="page28">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/reversing_bg.jpg" /></div>
+                <div class="Inner">
+                    <!--<div class="reversing_tip box_tip box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/reversing_tip.png" /></div>-->
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--ESP/HAC-->
+            <div class="cmn-Scenes PublicScenes page29" id="page29">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/esp_bg.jpg" /></div>
+                <div class="Inner">
+                    <!--<div class="esp_tip box_tip box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/esp_tip.png" /></div>-->
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                    <div class="esp_title box_img cmn-animate" cfg="{action:[{styles:{'top':'20%'},speed:900}],loop:0,index:1}"><img src="images/load.png" lazypath="images/content/taster/technology/security/esp_title.png" /></div>
+                    <!--<div class="esp_car box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/esp_car.png" /></div>-->
+                    <div class="esp_des box_img"><img src="images/load.png" lazypath2="images/content/taster/technology/security/esp_des.png" /></div>
+                </div>
+            </div>
+
+            <!--LED日间行车灯-->
+            <div class="cmn-Scenes PublicScenes page30" id="page30">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/day_light_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="day_light_shadow box_img"><img src="images/load.png" lazypath2="images/content/taster/technology/security/day_light_shadow.png" /></div>
+                    <div class="day_light_car box_img"><img src="images/load.png" lazypath2="images/content/taster/technology/security/day_light_car.png" /></div>
+                    <div class="day_light_text box_img cmn-animate" cfg="{action:[{styles:{'right':'26%'},speed:900}],loop:0,index:1}"><img src="images/load.png" lazypath="images/content/taster/technology/security/day_light_text.png" /></div>
+                    <div class="day_light2 box_img JscDayLight1"><img src="images/load.png" lazypath2="images/content/taster/technology/security/day_light2.png" /></div>
+                    <div class="day_light1 box_img JscDayLight2"><img src="images/load.png" lazypath2="images/content/taster/technology/security/day_light1.png" /></div>
+                    <!--<div class="day_light_tip box_tip box_img"><img src="images/load.png" lazypath="images/content/taster/technology/security/day_light_tip.png" /></div>-->
+                    <div class="arrow_btn Jsc_arrow_btn cmn-animate" cfg="{action:[{styles:{'bottom':'4%'},speed:700},{styles:{'bottom':'5%'},speed:700}],loop:1,index:1}"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/arrow_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--配置表-->
+            <div class="cmn-Scenes PublicScenes page20" id="page20">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg/configuration.jpg" /></div>
+                <div class="Inner">
+                    <div class="configuration_shadow box_img"><img src="images/load.png" lazypath2="images/content/allocation/configuration_shadow.png" /></div>
+                    <div class="configuration_tip box_img"><img src="images/load.png" lazypath2="images/content/allocation/configuration_tip.png" /></div>
+                    <div class="configuration_con" style="width:58%">
+                        <div class="configuration_des box_img"><img src="images/load.png" lazypath2="images/content/allocation/configuration_des.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--新闻发布(导航)-->
+            <div class="cmn-Scenes PublicScenes page23" id="page23">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg/press_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="press_shadow box_img">
+                        <img src="images/load.png" lazypath="images/content/press/press_shadow.png" />
+                    </div>
+                    <div class="focus_news press_box box_img">
+                        <!--鼠标放上去的时候给他的父级添加一个hover-->
+                        <img class="press_bar" src="images/load.png" lazypath="images/content/press/focus_news.png" />
+                        <div class="press_hoverbar"><img src="images/load.png" lazypath="images/content/press/focus_hover_news.png" /></div>
+                        <i class="press_hover JscFocusNews" newstypes="1"></i>
+                    </div>
+                    <div class="media_reports press_box box_img">
+                        <!--鼠标放上去的时候给他的父级添加一个hover-->
+                        <img class="press_bar" src="images/load.png" lazypath="images/content/press/media_reports.png" />
+                        <div class="press_hoverbar"><img src="images/load.png" lazypath="images/content/press/media_hover_reports.png" /></div>
+                        <i class="press_hover JscFocusNews" newstypes="2"></i>
+                    </div>
+                    <!--<div class="user_experience press_box box_img">
+                        鼠标放上去的时候给他的父级添加一个hover
+                        <img class="press_bar" src="images/load.png" lazypath="images/content/press/user_experience.png" />
+                        <div class="press_hoverbar"><img src="images/load.png" lazypath="images/content/press/user_hover_experience.png" /></div>
+                        <i class="press_hover"></i>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--精彩下载-->
+            <div class="cmn-Scenes PublicScenes page22" id="page22">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg/download.jpg" /></div>
+                <div class="Inner">
+                    <div class="lf_shadow box_img shadow_box"><img src="images/load.png" lazypath="images/content/download/lf_shadow.png" /></div>
+                    <div class="rl_shadow box_img shadow_box"><img src="images/load.png" lazypath="images/content/download/rl_shadow.png" /></div>
+                    <div class="paper_shadow box_img download_box">
+                        <div class="paper_hover download_hover"><img src="images/load.png" lazypath="images/content/download/paper_hover.png" /></div>
+                        <img class="reset_shadow" src="images/load.png" lazypath="images/content/download/paper_shadow.png" />
+                        <i class="hover_des paper_des"></i>
+                    </div>
+                    <div class="video_shadow box_img download_box">
+                        <div class="video_hover download_hover"><img src="images/load.png" lazypath="images/content/download/video_hover.png" /></div>
+                        <img class="reset_shadow" src="images/load.png" lazypath="images/content/download/video_shadow.png" />
+                        <i class="hover_des video_des"></i>
+                    </div>
+                    <div class="paper_box">
+                        <!--video_item为一条翻页信息-->
+                        <div class="paper_item JscPaperItme">
+                            <!--i标签为点击下载区域-->
+                            <div class="paper_menu box_img paper_con1 Jsc_paper_menu JscPaperMenu1">
+                                <a href="javascript:void(0)"><img class="dat-pic_url-src" src="" lazypath="images/content/download/paper_des.png" /></a>
+                                <i picture_id="{picture_id}"></i>
+                            </div>
+                            <!--i标签为点击下载区域-->
+                            <div class="paper_menu box_img paper_con2 Jsc_paper_menu JscPaperMenu2">
+                                <a href="javascript:void(0)"><img class="dat-pic_url-src" src="" lazypath="images/content/download/paper_des.png" /></a>
+                                <i picture_id="{picture_id}"></i>
+                            </div>
+                            <!--i标签为点击下载区域-->
+                            <div class="paper_menu box_img paper_con3 Jsc_paper_menu JscPaperMenu3">
+                                <a href="javascript:void(0)"><img class="dat-pic_url-src" src="" lazypath="images/content/download/paper_des.png" /></a>
+                                <i picture_id="{picture_id}"></i>
+                            </div>
+                            <!--i标签为点击下载区域-->
+                            <div class="paper_menu box_img paper_con4 Jsc_paper_menu JscPaperMenu4">
+                                <a href="javascript:void(0)"><img class="dat-pic_url-src" src="" lazypath="images/content/download/paper_des.png" /></a>
+                                <i picture_id="{picture_id}"></i>
+                            </div>
+                            <!--i标签为点击下载区域-->
+                            <div class="paper_menu box_img paper_con5 Jsc_paper_menu JscPaperMenu5">
+                                <a href="javascript:void(0)"><img class="dat-pic_url-src" src="" lazypath="images/content/download/paper_des.png" /></a>
+                                <i picture_id="{picture_id}"></i>
+                            </div>
+                        </div>
+                        <div class="JscPaperPageBtn paper_page_box">
+                            <div class="paper_left_page paper_page Jsc_page_btn pagPre"><a href="javascript:void(0)"></a></div>
+                            <div class="paper_right_page paper_page Jsc_page_btn pagNext"><a href="javascript:void(0)"></a></div>
+                        </div>
+                    </div>
+                    <div class="video_box">
+                        <!--video_item为一条翻页信息-->
+                        <div class="video_item">
+                            <!--i标签为点击下载区域-->
+                            <div class="video_menu box_img video_con1 JscVideoListPic JscVideoMenu1">
+                                <a href="javascript:void(0)"><img class="dat-video_pic-src" src="" lazypath="images/content/download/video_des.png" /></a>
+                                <i videopath="{video_id}" videourl="{video_url}"></i>
+                            </div>
+                            <!--i标签为点击下载区域-->
+                            <div class="video_menu box_img video_con2 JscVideoListPic JscVideoMenu2">
+                                <a href="javascript:void(0)"><img class="dat-video_pic-src" src="" lazypath="images/content/download/video_des.png" /></a>
+                                <i videopath="{video_id}" videourl="{video_url}"></i>
+                            </div>
+                            <!--i标签为点击下载区域-->
+                            <div class="video_menu box_img video_con3 JscVideoListPic JscVideoMenu3">
+                                <a href="javascript:void(0)"><img class="dat-video_pic-src" src="" lazypath="images/content/download/video_des.png" /></a>
+                                <i videopath="{video_id}" videourl="{video_url}"></i>
+                            </div>
+                        </div>
+                        <div class="video_page_box JscVideoPage">
+                            <div class="video_left_page video_page Jsc_page_btn pagPre"><a href="javascript:void(0)"></a></div>
+                            <div class="video_right_page video_page Jsc_page_btn pagNext"><a href="javascript:void(0)"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--新闻详情页-->
+            <div class="cmn-Scenes PublicScenes page21" id="page21" scenesqueuename="Information">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg/news_des.jpg" /></div>
+                <div class="Inner">
+                    <div class="news_return JscReturn"><a href="javascript:void(0)">返回</a></div>
+                    <div class="news_tip box_img"><img src="images/load.png" lazypath="images/content/information/news_tip.png" /></div>
+                    <div class="news_box">
+                        <div class="news_bar">
+                            <ul class="news_nav box_img JscNewsNavBox">
+                                <li class="JscNewNav" news_id="{news_id}" news_title="{title}"><a href="javascript:void(0)"><img class="dat-pic_url-src" src="images/load.png" lazypath="images/content/information/news_img.png" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="news_carousel JscCarouselMsg">
+                            <!--添加一个carousel_update为选中状态-->
+                        </div>
+                    </div>
+                    <div class="news_con">
+                        <div class="news_title JscNewsCon">
+                            <h3 class="dat-title">PM2.5&26度？C4L与车内高温污染Say No!</h3>
+                            <div class="news_item">
+                                <h4 class="dat-introdution">“尽量别出门，不被热死，也被呛死。”这个声音跟夏天一起，如期而至。虽然听上去有些夸张，却也是事实。走在路上，夏日的骄阳足以把我们晒焉；经常爆表的PM2.5足以让我们肺部、血液不堪重任。有人说，开车呗！可是，小编真忍不住多嘴一句了：您的爱车真能对抗车内高温污染...</h4>
+                            </div>
+                            <div class="news_more Jsc_news_more" news_id="{news_id}"><a href="javascript:void(0)">查看更多></a></div>
+                        </div>
+                        <div class="news_details">
+                            <div class="news_des">
+                                <a class="JscNewsDesList dat-title" news_id="{news_id}" href="javascript:void(0)">1.智驱双核驭动未来 售价15.79-18.99万 东...</a>
+                                <!--<a href="javascript:void(0)">2.“T+STT核芯动力”首发旗舰车 东风雪铁...</a>
+                                <a href="javascript:void(0)">3.智能再升级 C4L车载互联版成都车展上市</a>
+                                <a href="javascript:void(0)">4.Selina《开讲啦》传递向前的力量：只要活着...</a>
+                                <a href="javascript:void(0)">5.攻防兼备 解读C4L的制胜之道</a>
+                                <a href="javascript:void(0)">6.品牌传播，要热度更要有厚度</a>
+                                <a href="javascript:void(0)">7.C4L携手《开讲啦》 向前的力量诠释品牌形...</a>
+                                <a href="javascript:void(0)">8.PM2.5&26度？C4L与车内高温污染Say N...</a>
+                                <a href="javascript:void(0)">9.C4L示范 中级车耍酷指南</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_page">
+                        <ul class="page_nav Jsc_page_nav">
+                            <!--选中添加append-->
+                            <li class="pagNum">1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--媒体报道-->
+            <div class="cmn-Scenes PublicScenes page31" id="page31" scenesqueuename="Information2">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg/news_des.jpg" /></div>
+                <div class="Inner">
+                    <div class="news_return JscReturn"><a href="javascript:void(0)">返回</a></div>
+                    <div class="news_tip box_img"><img src="images/load.png" lazypath="images/content/information/inf_tip.png" /></div>
+                    <div class="news_box">
+                        <div class="news_bar">
+                            <ul class="news_nav box_img JscNewsNavBox2">
+                                <li class="JscNewNav2" news_id="{news_id}"><a href="javascript:void(0)"><img class="dat-pic_url-src" src="images/load.png" lazypath="images/content/information/news_img.png" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="news_carousel JscCarouselMsg2">
+                            <!--添加一个carousel_update为选中状态-->
+                        </div>
+                    </div>
+                    <div class="news_con">
+                        <div class="news_title JscNewsCon2">
+                            <h3 class="dat-title">PM2.5&26度？C4L与车内高温污染Say No!</h3>
+                            <div class="news_item">
+                                <h4 class="dat-introdution">“尽量别出门，不被热死，也被呛死。”这个声音跟夏天一起，如期而至。虽然听上去有些夸张，却也是事实。走在路上，夏日的骄阳足以把我们晒焉；经常爆表的PM2.5足以让我们肺部、血液不堪重任。有人说，开车呗！可是，小编真忍不住多嘴一句了：您的爱车真能对抗车内高温污染...</h4>
+                            </div>
+                            <div class="news_more Jsc_news_more2" news_id="{news_id}" news_title="{title}"><a href="javascript:void(0)">查看更多></a></div>
+                        </div>
+                        <div class="news_details">
+                            <div class="news_des">
+                                <a class="JscNewsDesList2 dat-title" news_id="{news_id}" href="javascript:void(0)">1.智驱双核驭动未来 售价15.79-18.99万 东...</a>
+                                <!--<a href="javascript:void(0)">2.“T+STT核芯动力”首发旗舰车 东风雪铁...</a>
+                                <a href="javascript:void(0)">3.智能再升级 C4L车载互联版成都车展上市</a>
+                                <a href="javascript:void(0)">4.Selina《开讲啦》传递向前的力量：只要活着...</a>
+                                <a href="javascript:void(0)">5.攻防兼备 解读C4L的制胜之道</a>
+                                <a href="javascript:void(0)">6.品牌传播，要热度更要有厚度</a>
+                                <a href="javascript:void(0)">7.C4L携手《开讲啦》 向前的力量诠释品牌形...</a>
+                                <a href="javascript:void(0)">8.PM2.5&26度？C4L与车内高温污染Say N...</a>
+                                <a href="javascript:void(0)">9.C4L示范 中级车耍酷指南</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_page">
+                        <ul class="page_nav Jsc_page_nav2">
+                            <!--选中添加append-->
+                            <li class="pagNum">1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--Main_end-->
+    </div><!--Wrap_end-->
+    <!-----------------------------公共部分------------------------------------>
+    <!--公共箭头-->
+    <!--首页icon-->
+    <div class="home_icon"><img src="images/load.png" lazypath="images/home_icon.png" /></div>
+    <!--左侧导航部分-->
+    <div class="left_sidebar Jsc_left_sidebar">
+        <div class="left_sidebar_click Jsc_left_sidebar_click">
+            <div class="click_btn Jsc_click_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/click_btn.png" /></a></div>
+        </div>
+        <div class="left_sidebar_box Jsc_left_sidebar_box">
+            <div class="sidebar_top">
+                <ul class="sidebar_nav Jsc_sidebar_nav">
+                    <li class="sidebar_set frist_set"><a class="nav_frist" href="javascript:void(0)"><span>首页</span><i><img class="nav_img1 nav_img nav_one_img" src="images/load.png" lazypath="images/public/nav_img1.png" /><img class="nav_hoverimg1 nav_hoverimg nav_one_img" src="images/load.png" lazypath="images/public/nav_hoverimg1.png" /></i></a></li>
+                    <li><a href="javascript:void(0)"><span>品鉴新C4L</span><i><img class="nav_img2 nav_img nav_two_img" src="images/load.png" lazypath="images/public/nav_img2.png" /><img class="nav_hoverimg2 nav_hoverimg nav_two_img" src="images/load.png" lazypath="images/public/nav_hoverimg2.png" /></i></a></li>
+                    <li><a href="javascript:void(0)"><span>参数配置表</span><i><img class="nav_img3 nav_img nav_three_img" src="images/load.png" lazypath="images/public/nav_img3.png" /><img class="nav_hoverimg3 nav_hoverimg nav_three_img" src="images/load.png" lazypath="images/public/nav_hoverimg3.png" /></i></a></li>
+                    <li><a href="javascript:void(0)"><span>新闻动态</span><i><img class="nav_img4 nav_img nav_four_img" src="images/load.png" lazypath="images/public/nav_img4.png" /><img class="nav_hoverimg4 nav_hoverimg nav_four_img" src="images/load.png" lazypath="images/public/nav_hoverimg4.png" /></i></a></li>
+                    <li><a href="javascript:void(0)"><span>精彩下载</span><i><img class="nav_img5 nav_img nav_five_img" src="images/load.png" lazypath="images/public/nav_img5.png" /><img class="nav_hoverimg5 nav_hoverimg nav_five_img" src="images/load.png" lazypath="images/public/nav_hoverimg5.png" /></i></a></li>
+                </ul>
+            </div>
+            <div class="sidebar_middle">
+                <ul class="sidebar_des">
+                    <li><a href="http://4s.dongfeng-citroen.com.cn/CityInquiry.php" target="_blank">经销商查询</a></li>
+                    <!--<li><a href="http://www.dongfeng-citroen.com.cn/club/forum.php?mod=forumdisplay&fid=505" target="_blank">新C4L俱乐部</a></li>
+                    <li><a href="http://www.dongfeng-citroen.com.cn/citroen/index.shtml" target="_blank">东风雪铁龙官网</a></li>-->
+                </ul>
+            </div>
+            <div class="sidebar_bottom">
+                <div class="nav_return Jsc_nav_return"><a class="imooc-icon" href="javascript:void(0)"><img src="images/load.png" lazypath="images/public/nav_return.png" /></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!--品鉴C4L右侧切换导航部分-->
+    <div class="menu_sidebar JscNavigation cmn-MenuContainer">
+        <!--澎湃动力-->
+        <div class="dynamic_box menu_set JscDynamicMenu">
+            <p></p>
+            <i class="dynamic_tip cmn-MenuItem" scenesid="power_family">澎湃动力<strong></strong></i>
+            <ul class="dynamic_menu pub_menu JscDynamicMenu">
+                <!--澎湃动力(动力家族)-->
+                <li>
+                    <a class="cmn-MenuItem dynamic_title JscMenuItemTitle JscDynamicTitle1 menu_tip" scenesid="power_family" href="javascript:void(0)">动力家族<em></em></a>
+                    <!--<dl class="cmn-MenuItem JscMenuTtem1" scenesid="page1">
+                        <dt><a href="javascript:void(0)">1.2T高效动力</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem2" scenesid="page2">
+                        <dt><a href="javascript:void(0)">1.6T澎湃动力</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem3" scenesid="page3">
+                        <dt><a href="javascript:void(0)">1.8T均衡动力</a></dt>
+                        <dd><span></span></dd>
+                    </dl>-->
+                </li>
+                <!--澎湃动力(T+STT核芯动力)-->
+                <li>
+                    <a class="dynamic_title JscMenuItemTitle JscDynamicTitle2 cmn-MenuItem menu_tip" scenesid="STT" href="javascript:void(0)">T+STT核芯动力<em></em></a>
+                </li>
+                <!--澎湃动力(卓越操控)-->
+                <li>
+                    <a class="dynamic_title JscMenuItemTitle cmn-MenuItem JscDynamicTitle3 menu_tip" scenesid="excellent_control" href="javascript:void(0)">卓越操控<em></em></a>
+                    <!--<dl class="cmn-MenuItem JscMenuTtem4" scenesid="page4">
+                        <dt><a href="javascript:void(0)">6大操控 稳定程式</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem5" scenesid="000">
+                        <dt><a href="javascript:void(0)">底盘调教</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem6" scenesid="page5">
+                        <dt><a href="javascript:void(0)">D型多功能集控真皮赛车方向盘</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem7" scenesid="page5">
+                        <dt><a href="javascript:void(0)">6速手自一体变速箱</a></dt>
+                        <dd><span></span></dd>
+                    </dl>-->
+                </li>
+            </ul>
+
+        </div>
+
+        <!--人性科技-->
+        <!--添加一个update为未选中状态-->
+        <div class="technology_box menu_set update">
+            <p></p>
+            <i class="technology_tip cmn-MenuItem JscDynamicTitle4" scenesid="intelligence">人性科技<strong class="set_big"></strong></i>
+            <ul class="technology_menu pub_menu">
+                <!--人性科技(智能)-->
+                <li>
+                    <a class="cmn-MenuItem JscMenuItemTitle JscDynamicTitle5 menu_tip" scenesid="intelligence" href="javascript:void(0)">智能<em class="set_centre"></em></a>
+                    <!--<dl class="cmn-MenuItem" scenesid="page6">
+                        <dt><a href="javascript:void(0)">智能互联系统</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem8" scenesid="page7">
+                        <dt><a href="javascript:void(0)">一键启动</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem9" scenesid="page8">
+                        <dt><a href="javascript:void(0)">智能免匙</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem10" scenesid="page9">
+                        <dt><a href="javascript:void(0)">超净爽智能空调</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem11" scenesid="page10">
+                        <dt><a href="javascript:void(0)">炮筒式炫彩智能组合仪表</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem12" scenesid="page11">
+                        <dt><a href="javascript:void(0)">7寸智能多媒体触屏</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem13" scenesid="page12">
+                        <dt><a href="javascript:void(0)">带加热折叠功能外后视镜</a></dt>
+                        <dd><span></span></dd>
+                    </dl>-->
+                </li>
+                <!--人性科技(舒适)-->
+                <li>
+                    <a class="cmn-MenuItem JscMenuItemTitle JscDynamicTitle6 menu_tip" scenesid="comfortable" href="javascript:void(0)">舒适<em></em></a>
+                    <!--<dl class="cmn-MenuItem JscMenuTtem14" scenesid="page13">
+                        <dt><a href="javascript:void(0)">2710mm超长轴距</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem15" scenesid="page14">
+                        <dt><a href="javascript:void(0)">17英寸动感铝合金轮毂</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem16" scenesid="page15">
+                        <dt><a href="javascript:void(0)">尊贵座舱</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem17" scenesid="page16">
+                        <dt><a href="javascript:void(0)">后排航空式睡眠头枕</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem18" scenesid="page17">
+                        <dt><a href="javascript:void(0)">Driver First</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem19" scenesid="page18">
+                        <dt><a href="javascript:void(0)">镀铬饰条</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem20" scenesid="page18">
+                        <dt><a href="javascript:void(0)">车身色外门把手加镀铬条</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem21" scenesid="page18">
+                        <dt><a href="javascript:void(0)">副驾驶席手套箱</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem22" scenesid="page18">
+                        <dt><a href="javascript:void(0)">前排座椅侧面储物空间</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem23" scenesid="page18">
+                        <dt><a href="javascript:void(0)">出风口哑光镀铬装饰</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem24" scenesid="page18">
+                        <dt><a href="javascript:void(0)">车内门板镀铬装饰边框</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem25" scenesid="page18">
+                        <dt><a href="javascript:void(0)">车内门把手镀铬装饰</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem26" scenesid="page18">
+                        <dt><a href="javascript:void(0)">后排车门储物空间</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem27" scenesid="page18">
+                        <dt><a href="javascript:void(0)">后排空调出风口</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem28" scenesid="page18">
+                        <dt><a href="javascript:void(0)">驾驶员扶手侧眼镜盒</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem JscMenuTtem29" scenesid="page18">
+                        <dt><a href="javascript:void(0)">行李箱</a></dt>
+                        <dd><span></span></dd>
+                    </dl>-->
+                </li>
+                <!--人性科技(安全)-->
+                <li>
+                    <a class="cmn-MenuItem JscMenuItemTitle JscDynamicTitle7 menu_tip" scenesid="safety" href="javascript:void(0)">安全<em></em></a>
+                    <!--<dl class="cmn-MenuItem" scenesid="page24">
+                        <dt><a href="javascript:void(0)">值得信赖的五星安全</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem" scenesid="page25">
+                        <dt><a href="javascript:void(0)">“太空舱”立体防护车身</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem" scenesid="page26">
+                        <dt><a href="javascript:void(0)">“All around body”6安全气囊</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem" scenesid="page27">
+                        <dt><a href="javascript:void(0)">“压力直感”胎压监测系统</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem" scenesid="page28">
+                        <dt><a href="javascript:void(0)">防眩目内后视镜/可视倒车系统</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem" scenesid="page29">
+                        <dt><a href="javascript:void(0)">ESP/HAC</a></dt>
+                        <dd><span></span></dd>
+                    </dl>
+                    <dl class="cmn-MenuItem" scenesid="page30">
+                        <dt><a href="javascript:void(0)">LED日间行车灯</a></dt>
+                        <dd><span></span></dd>
+                    </dl>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--右侧导航部分-->
+    <div class="right_sidebar">
+        <ul class="right_barnav Jsc_right_barnav">
+            <li class="right_sidebar_btn1 JscSidebarBtn1"><a href="javascript:void(0)"></a><i></i></li>
+            <li class="right_sidebar_btn2 JscSidebarBtn2"><a href="javascript:void(0)"></a><i></i></li>
+            <li class="right_sidebar_btn3 JscSidebarBtn3"><a href="javascript:void(0)"></a><i></i></li>
+        </ul>
+    </div>
+
+    <!--头部LOGO部分-->
+    <div class="header_box">
+        <div class="logo"><a href="http://www.dongfeng-citroen.com.cn/citroen/index.shtml" target="_blank"><img src="images/load.png" lazypath="images/public/title.png" /></a></div>
+        <div class="title"><a href="http://www.dongfeng-citroen.com.cn/citroen/index.shtml" target="_blank"><img src="images/load.png" lazypath="images/public/logo.png" /></a></div>
+    </div>
+
+    <!--底部版权部分-->
+    <div class="footer_box">
+        <div class="footer_tip"><img src="images/load.png" lazypath="images/public/footer_tip.png" /></div>
+        <div class="foot_copyright">
+            <p><em>服务热线&nbsp;&nbsp;400-886-6688</em><span>|</span><em>邮箱&nbsp;callcentr@dcad.com.cn</em><span>|</span>鄂ICP备10015998号-6<span>|</span></p>
+        </div>
+        <div class="footer_sidebar">
+            <ul class="footer_menu">
+                <li><a href="http://www.dongfeng-citroen.com.cn/citroen/jsp/contact_us.jsp?comefrom=c4l" target="_blank">在线咨询</a></li>
+                <li><a href="javascript:void(0)">|</a></li>
+                <li><a href="http://www.dongfeng-citroen.com.cn/citroen/dfxtlbk/index.shtml" target="_blank">百科词典</a></li>
+                <li><a href="javascript:void(0)">|</a></li>
+                <li><a href="http://weibo.com/citroenc4l" target="_blank">关注新C4L官方微博</a></li>
+                <li><a href="javascript:void(0)">|</a></li>
+                <li><a href="http://dongfeng-citroen.com.cn/citroen/bwyqc/khfw/lxwm/index.shtml" target="_blank">联系我们</a></li>
+                <li><a href="javascript:void(0)">|</a></li>
+                <li><a href="http://dongfeng-citroen.com.cn/citroen/flsm/index.shtml" target="_blank">法律声明</a></li>
+            </ul>
+        </div>
+        <div class="footer_share">
+            <ul class="share_sidebar">
+                <li><a target="_blank" id="sinaShare" class="sinaShare" href="javascript:void(0)"></a></li>
+                <li><a target="_blank" id="tenxunShare" class="tenxunShare" href="javascript:void(0)"></a></li>
+                <li><a target="_blank" id="renrenShare" class="renrenShare" href="javascript:void(0)"></a></li>
+                <li><a target="_blank" id="doubanShare" class="doubanShare" href="javascript:void(0)"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-----------------------------浮层------------------------------------>
+    <div style="display:block" class="pop_float Jsc_pop_float">
+        <!--预约试驾-->
+        <div class="drive_float Jsc_drive_float">
+            <div siteaddress="预约试驾" class="msg_box Js_FuChen">
+                <form action="" method="post" class="msg_form">
+                    <ul class="msg_item Jsc_msg_item">
+                        <li class="JscName"><label for=""><span>*</span>姓名:</label><input type="text" class="msg_name pub_big pub_set Js_UserName"></li>
+                        <!--选中男女给em标签添加sex_select-->
+                        <li class="sex_li JscSelectSexBox">
+                            <label for=""><span>*</span>性别:</label>
+                            <em class="sex_man JscSex sex_select" values="男"><a></a>男</em>
+                            <em class="JscSex" values="女"><a></a>女</em>
+                        </li>
+                        <li><label for=""><span>*</span>手机:</label><input type="text" class="msg_phone pub_big pub_set Js_Phone Js_lyf" maxlength="11"></li>
+                        <li>
+                            <label for=""><span>*</span>计划购车时间:</label>
+                            <select class="msg_date pub_big pub_set JscBuyCarTime select_box">
+                                <option value="一周之内">一周之内</option>
+                                <option value="两周之内">两周之内</option>
+                                <option value="一个月之内">一个月之内</option>
+                                <option value="两个月之内">两个月之内</option>
+                            </select>
+                        </li>
+                        <li><label for=""><span>*</span>省份/直辖市:</label><select name="Province1" id="" class="msg_province pub_big pub_set Js_IsProvince select_box"></select></li>
+                        <li><label for=""><span>*</span>城市/区/县:</label><select name="City1" id="" class="msg_city pub_small pub_set Js_IsCity select_box"></select><select name="County1" id="" class="msg_area pub_small pub_set Js_IsCounty select_box"></select></li>
+                    </ul>
+                </form>
+                <p class="accurate">请准确填写您的预定信息我们将在第一时间与您联系</p>
+                <div class="checkbox_bar"><input class="check_set JscDies JscCheck" type="checkbox" checked="checked"><span>我已阅读<a href="javascript:void(0)" class="Jsc_btn">免责声明</a>,同意接受来</span><p>自东风雪铁龙的推广信息</p></div>
+            </div>
+            <div class="msg_btn Js_SubmitBtn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/msg_btn.png" /></a></div>
+            <div class="msg_close_btn Jsc_msg_close_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/msg_close_btn.png" /></a></div>
+            <div class="driver_gift"><img src="images/load.png" lazypath="images/pop/driver_gift.png" /></div>
+            <div class="driver_tip"><img src="images/load.png" lazypath="images/pop/driver_tip.png" /></div>
+            <div class="driver_car"><img src="images/load.png" lazypath="images/pop/driver_car.png" /></div>
+        </div>
+
+        <!--预约购车-->
+        <div class="shopping_float Jsc_shopping_float" style="display:none">
+            <div siteaddress="预约购车" class="msg_box Js_FuChen">
+                <form action="" method="post" class="msg_form">
+                    <ul class="msg_item Jsc_msg_item">
+                        <li><label for=""><span>*</span>姓名:</label><input type="text" class="msg_name pub_big pub_set Js_UserName"></li>
+                        <!--选中男女给em标签添加sex_select-->
+                        <li class="sex_li JscSelectSexBox"><label for=""><span>*</span>性别:</label><em class="sex_man JscSex sex_select" values="男"><a></a>男</em><em class="JscSex" values="女"><a></a>女</em></li>
+                        <li><label for=""><span>*</span>手机:</label><input type="text" class="msg_phone pub_big pub_set Js_Phone Js_lyf" maxlength="11"></li>
+                        <li>
+                            <label for=""><span>*</span>计划购车时间:</label>
+                            <select class="msg_date pub_big pub_set JscBuyCarTime select_box">
+                                <option value="一周之内">一周之内</option>
+                                <option value="两周之内">两周之内</option>
+                                <option value="一个月之内">一个月之内</option>
+                                <option value="两个月之内">两个月之内</option>
+                            </select>
+                        </li>
+                        <li><label for=""><span>*</span>省份/直辖市:</label><select name="Province2" id="" class="msg_province pub_big pub_set Js_IsProvince select_box"></select></li>
+                        <li><label for=""><span>*</span>城市/区/县:</label><select name="City2" id="" class="msg_city pub_small pub_set Js_IsCity select_box"></select><select name="County2" id="" class="msg_area pub_small pub_set Js_IsCounty select_box"></select></li>
+                    </ul>
+                </form>
+                <p class="accurate">请准确填写您的预定信息我们将在第一时间与您联系</p>
+                <div class="checkbox_bar"><input class="check_set JscDies JscCheck" type="checkbox" checked="checked"><span>我已阅读<a href="javascript:void(0)" class="Jsc_btn">免责声明</a>,同意接受来</span><p>自东风雪铁龙的推广信息</p></div>
+            </div>
+            <div class="msg_btn Js_SubmitBtn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/msg_btn.png" /></a></div>
+            <div class="msg_close_btn Jsc_msg_close_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/msg_close_btn.png" /></a></div>
+            <div class="shopping_tip"><img src="images/load.png" lazypath="images/pop/shopping_tip.png" /></div>
+            <div class="shopping_car"><img src="images/load.png" lazypath="images/pop/shopping_car.png" /></div>
+        </div>
+
+        <!--360度车-->
+        <div class="rotate_float Jsc_rotate_float">
+
+            <div class="rotate_box">
+                <div class="rotate_bar"></div>
+                <div class="rotate_left"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_left.png" /></a></div>
+                <div class="rotate_right"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_right.png" /></a></div>
+            </div>
+            <div class="rotate_tip"><img src="images/load.png" lazypath="images/pop/rotate/rotate_tip.png" /></div>
+            <div class="rotate_btn Jsc_rotate_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/msg_close_btn.png" /></a></div>
+            <ul class="rotate_menu Jsc_rotate_menu revolve_nav">
+                <!--给a添加一个color_set为颜色选中状态-->
+                <li carcolor="grey"><a class="color_gray" href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_gray.png" /></a><em class="font_gray">灰</em></li>
+                <li carcolor="blue"><a class="color_blue" href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_blue.png" /></a><em class="font_blue">蓝</em></li>
+                <li carcolor="golden"><a class="color_glod" href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_glod.png" /></a><em class="font_glod">金</em></li>
+                <li carcolor="white"><a class="color_white" href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_white.png" /></a><em class="font_white">白</em></li>
+                <li carcolor="black"><a class="color_block" href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_block.png" /></a><em class="font_block">黑</em></li>
+                <li carcolor="red"><a class="color_red" href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/rotate/rotate_red.png" /></a><em class="font_red">红</em></li>
+            </ul>
+            <div class="rotate_load JscLoad"></div>
+        </div>
+
+        <!--壁纸-->
+        <div class="wallpaper_float Jsc_wallpaper_float">
+            <div class="wallpaper_box">
+                <ul class="wallpaper_bar JscWallpaper">
+                    <li class="JscWallpaperLi" picture_id="{picture_id}">
+                        <a href="javascript:void(0)">
+                            <img class="dat-browse_url-src" src="" />
+                        </a>
+                        <span>
+                            <a class="small_paper JscSmallPaper1 dat-download_url1-href" href="javascript:void(0)" target="_blank">1024*768</a>
+                            <i class="paper_line JscSmallPaper2"></i>
+                            <a class="big_paper dat-download_url2-href" href="javascript:void(0)" target="_blank">1440*900</a>
+                        </span>
+                    </li>
+                    <!--<li><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_img.png" /></a><span><em class="small_paper">1024*768</em><i class="paper_line"></i><em class="big_paper">1440*900</em></span></li>
+                    <li><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_img.png" /></a><span><em class="small_paper">1024*768</em><i class="paper_line"></i><em class="big_paper">1440*900</em></span></li>
+                    <li><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_img.png" /></a><span><em class="small_paper">1024*768</em><i class="paper_line"></i><em class="big_paper">1440*900</em></span></li>-->
+                </ul>
+            </div>
+            <div class="wallpaper_close_btn Jsc_iwallpaper_close_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_close_btn.png" /></a></div>
+            <!--翻页按钮选中添加-->
+            <div class="wallpaper_left_btn wallpaper_btn  Jsc_wallpaper_btn JscWallpaperLeftBtn"><a href="javascript:void(0)"></a></div>
+            <div class="wallpaper_right_btn wallpaper_btn Jsc_wallpaper_btn JscWallpaperRightBtn"><a href="javascript:void(0)"></a></div>
+        </div>
+
+        <!--视频-->
+        <div class="wallpaper_float Jsc_Video_float">
+            <div class="wallpaper_box">
+                <ul class="wallpaper_bar JscVideo">
+                    <li class="JscVideoLi VideoPopInnerTopPic" video_id="{video_id}">
+                        <a href="javascript:void(0)">
+                            <img class="dat-video_url-src" src="" />
+                        </a>
+                    </li>
+                    <!--<li><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_img.png" /></a><span><em class="small_paper">1024*768</em><i class="paper_line"></i><em class="big_paper">1440*900</em></span></li>
+                    <li><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_img.png" /></a><span><em class="small_paper">1024*768</em><i class="paper_line"></i><em class="big_paper">1440*900</em></span></li>
+                    <li><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_img.png" /></a><span><em class="small_paper">1024*768</em><i class="paper_line"></i><em class="big_paper">1440*900</em></span></li>-->
+                </ul>
+            </div>
+            <div class="wallpaper_close_btn Jsc_iwallpaper_close_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_close_btn.png" /></a></div>
+        </div>
+
+        <!--新闻详情-->
+        <div class="inf_float Jsc_inf_float">
+            <div class="inf_close_btn Jsc_inf_close_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/wallpaper_close_btn.png" /></a></div>
+            <div class="inf_tip"><h2 id="JscNewTitle">百度为您找到相关结果约15</h2></div>
+            <div class="inf_box">
+                <p id="JscContent">百度为您找到相关结果约15,500,000个有道词典出品的人工翻译!有道词典倾力打造的人工翻译公司，汇聚全球顶级译员!世界500强指定翻译公</p>
+            </div>
+        </div>
+
+        <!--参与有奖问答-->
+        <div class="answer_float Jsc_answer_float">
+            <div class="answer_close_btn Jsc_answer_close_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/msg_close_btn.png" /></a></div>
+            <div class="answer_tip"><img src="images/load.png" lazypath="images/pop/answer/answer_tip.png" /></div>
+            <div class="answer_car"><img src="images/load.png" lazypath="images/pop/answer/answer_car.png" /></div>
+            <!--答题首页-->
+            <div class="answer_home Jsc_answer_home">
+                <div class="answer_home_tip"><img src="images/load.png" lazypath="images/pop/answer/answer_home_tip.png" /></div>
+                <div class="answer_gift"><img src="images/load.png" lazypath="images/pop/answer/answer_gift.png" /></div>
+                <div class="join_btn Jsc_join_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/answer/join_btn.png" /></a></div>
+                <div class="joinno_btn Jsc_joinno_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/answer/joinno_btn.png" /></a></div>
+            </div>
+            <!--答题一-->
+            <div class="answer_modules1 Jsc_answer_modules1">
+                <div class="modules1_box answer_box">
+                    <div class="modules1_tip page_tip"><p>1.新C4L搭载的1.2THP发动机功率是多少？</p></div>
+                    <div answerid="1" class="answer1_one answer_des Jscanswer1_one"><input type="radio" name="checked" id="first_A_set" /><label for="first_A_set">最大功率100Kw/rpm</label></div>
+                    <div answerid="2" class="answer1_two pub_answer answer_des Jscanswer1_two"><input type="radio" name="checked" id="first_B_set" /><label for="first_B_set">最大功率92Kw/rpm</label></div>
+                    <div answerid="3" class="answer1_three answer_des Jscanswer1_three"><input type="radio" name="checked" id="first_C_set" /><label for="first_C_set">最大功率96Kw/rpm</label></div>
+                    <!--答题答错后报出错误信息一-->
+                    <div class="error_msg JscErrorMsg1"><p>这是全新福克斯1.0T发动机功率，请你再想想！</p></div>
+                    <div class="error_msg JscErrorMsg2"><p>这是高尔夫7 1.4T发动机功率，请你再想想！</p></div>
+                </div>
+                <div class="next_btn JscNextBtn Jsc_next_btn1 JscErrorMsg2" optionsname="first"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/answer/next_btn.png" /></a></div>
+            </div>
+            <!--答题二-->
+            <div class="answer_modules2 Jsc_answer_modules2">
+                <div class="modules2_box answer_box">
+                    <div class="modules2_tip page_tip"><p>2.新C4L搭载的1.2THP发动机最大扭矩是多少？</p></div>
+                    <div answerid="1" class="answer2_one answer_des"><input type="radio" name="checked" id="second_A_set" /><label for="second_A_set">最大扭矩230Nm/rpm</label></div>
+                    <div answerid="2" class="answer2_two answer_des pub_answer"><input type="radio" name="checked" id="second_B_set" /><label for="second_B_set">最大扭矩170Nm/rpm</label></div>
+                    <div answerid="3" class="answer2_three answer_des"><input type="radio" name="checked" id="second_C_set" /><label for="second_C_set">最大扭矩225Nm/rpm</label></div>
+                    <!--答题答错后报出错误信息一-->
+                    <div class="error_msg JscErrorMsg1"><p>这是全新福克斯1.0T发动机扭矩，请你再想想！</p></div>
+                    <div class="error_msg error_msg2_2 JscErrorMsg2"><p>这是高尔夫7 1.4T发动机扭矩，请你再想想！</p></div>
+                </div>
+                <div class="next_btn JscNextBtn Jsc_next_btn2" optionsname="second"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/answer/next_btn.png" /></a></div>
+            </div>
+            <!--答题三-->
+            <div class="answer_modules3 Jsc_answer_modules3">
+                <div class="modules3_box answer_box">
+                    <div class="modules3_tip page_tip"><p>3.新C4L搭载的1.2THP发动机综合工况油耗是多少？</p></div>
+                    <div answerid="1" class="answer3_one answer_des"><input type="radio" name="checked" id="three_A_set" /><label for="three_A_set">最大扭矩5.4L/100m</label></div>
+                    <div answerid="2" class="answer3_two pub_answer answer_des"><input type="radio" name="checked" id="three_B_set" /><label for="three_B_set">最大扭矩5.6L/100m</label></div>
+                    <div answerid="3" class="answer3_three answer_des"><input type="radio" name="checked" id="three_C_set" /><label for="three_C_set">最大扭矩5.8L/100m</label></div>
+                    <!--答题答错后报出错误信息一-->
+                    <div class="error_msg JscErrorMsg1"><p>这是全新福克斯1.0T发动机综合工况油耗，请你再想想！</p></div>
+                    <div class="error_msg error_msg2_3 JscErrorMsg2"><p>这是高尔夫7 1.4T发动机综合工况油耗，请你再想想！</p></div>
+                </div>
+                <div class="next_btn JscNextBtn Jsc_next_btn3" optionsname="three"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/answer/next_btn.png" /></a></div>
+            </div>
+            <!--答题留资-->
+            <div class="answer_inf Jsc_answer_inf">
+                <div class="answer_gift2"><img src="images/load.png" lazypath="images/pop/answer/answer_gift2.png" /></div>
+                <div class="answer_inf_tip"><img src="images/load.png" lazypath="images/pop/answer/answer_inf_tip.png" /></div>
+                <div siteaddress="有奖问答" class="answer_inf_box Js_FuChen">
+                    <form class="answer_inf_form" action="" method="post">
+                        <ul class="answer_inf_bar">
+                            <li><label class="">姓名</label><input type="text" class="answer_input Js_UserName"></li>
+                            <li><label class="">手机</label><input type="text" class="answer_input Js_Phone"></li>
+                            <li><label class="">省份</label><select name="Province3" id="" class="answer_input Js_IsProvince"></select></li>
+                            <li><label class="">城市</label><select name="City3" id="" class="answer_input Js_IsCity"></select></li>
+                            <li class="sex_li JscSelectSexBox" style="display:none"><label for=""><span>*</span>性别:</label><em class="sex_man JscSex sex_select" values="&nbsp;"><a></a>男</em><em class="JscSex" values="&nbsp;"><a></a>女</em></li>
+                            <li style="display:none">
+                                <label for=""><span>*</span>计划购车时间:</label>
+                                <select class="msg_date pub_big pub_set JscBuyCarTime select_box">
+                                    <option value="&nbsp;&nbsp;"></option>
+                                </select>
+                            </li>
+                            <li class="attesting_checed"><input class="check_set JscDies JscCheck" type="checkbox" checked="checked"><span>我已阅读<a href="javascript:void(0)" class="Jsc_btn">免责声明</a> ，同意接受来自东风雪铁龙的推广信息</span></li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="submit_btn Jsc_submit_btn Js_SubmitBtn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/answer/submit_btn.png" /></a></div>
+            </div>
+        </div>
+
+        <!--免责声明-->
+        <div class="attesting_float Jsc_attesting_float">
+            <div class="attesting_close_btn Jsc_attesting_close_btn"><a href="javascript:void(0)"><img src="images/load.png" lazypath="images/pop/attesting_close_btn.png" /></a></div>
+            <div class="attesting_bar">
+                <img src="images/load.png" lazypath="images/pop/attesting_con.png" />
+            </div>
+        </div>
+
+        <!--视频浮层-->
+        <div style="display:block" class="video_float JscIndexVideoFloat">
+            
+            <div class="video_des JscIndexVideo"></div>
+            <div class="video_float_btn CloseIndexVideo"><a href="javascript:void(0)">跳过</a></div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+1：图片    所有背景图片都放在images下的bg文件夹下。。。文件夹里最好都是jpg图片。。。后期压缩比较方便
+           
+            整站大的分为五部分
+            
+             1：首页    相对应的图片目录   images下
+
+	     2：品鉴C4L    相对应的图片目录   images/content/taster
+                 
+                     品鉴下分两大块
+                      
+                           1：澎湃动力（images/content/taster/dynamic）---下有分动力家族（images/content/taster/dynamic/family），核心动力（images/content/taster/dynamic/），卓越操控（images//content/taster/dynamic/manipulation）
+
+                           2：人性科技（images/content/taster/technology）--下有分智能（images/content/taster/technology/smartphone），舒适（images/content/taster/technology/comfortable），安全（images/content/taster/technology/security ）
+
+
+             3：参数配置表   相对应的图片目录   images/content/allocation
+
+             4：新闻资讯    相对应的图片目录   images/content/information
+
+             5：精彩下载    相对应的图片目录   images/content/download
+
+2：样式    写的样式放在css文件夹下的custom.css里，备注清楚就可以，后期压缩整合比较方便

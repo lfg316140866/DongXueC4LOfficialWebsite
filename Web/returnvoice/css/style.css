@@ -1,0 +1,46 @@
+﻿
+body {margin-top:0;margin-left:0;height:100%;width:100% !important;margin:0 auto;background-color:#ccc;}
+.warp{margin:0 auto;text-align:center;width:100%;}
+.logo{position:absolute;left:23%;}
+.bg{height:100%;width:100%;font-size:0;overflow:hidden;}
+.bg>img{width:100%;}
+.topbgtext{position:relative;font-size:0;top:0;left:0;width:100%;height:100%;}
+.main{position:relative;width:1200px;margin:0 auto;-webkit-animation:media;}
+.joinbtn{position:absolute;top:343px;left:138px;}
+.liuzi{position:absolute;top:565px;left:735px;height:290px;width:373px;}
+.name{position:absolute;top: 0px;left: 50px;background:url(../images/namebox.jpg);width:146px;}
+.inpname{position:absolute;width:135px;top:0;left:0px;}
+.sexbox{position:absolute;width:103px;top:0;left:248px;background:url(../images/sexbox.jpg);}
+.sex{position:absolute;width:102px;top:0;left:0;}
+.phono{position:absolute;top: 45px;left: 50px;background:url(../images/phonobox.jpg);width:300px;}
+.inpphono{position:absolute;width:290px;top:0;left:0px;font-size:15px;}
+.probox{position:absolute;top: 90px;left: 50px;background:url(../images/probox.jpg);width:146px;}
+.pro{position:absolute;width:130px;top:0;left:0;}
+.citybox{position:absolute;width:103px;top:90px;left:248px;background:url(../images/sexbox.jpg);}
+.city{position:absolute;height:31px;width:98px;top:0;left:0; }
+.listbox{position:absolute;top: 135px;left: 50px;background:url(../images/list.jpg);width:300px;}
+.list{position:absolute;height:31px;width:295px;top:0;left:0;}
+.checkbox{position:absolute;top:150px;left:0px;}
+.check2{position:absolute;top:0;left:0;display:none;}
+.text>span{position:absolute;top: 148px;left: 30px;font-size: 15px;color: white;width:310px;text-align:left;}
+.text>span>a{color:red;}
+.submitbtn{position:absolute;top:220px;left:50%;margin-left:-92px}
+.bottom{position:relative;font-size:0;}
+.pub_inp{height:31px;line-height:31px;border:none;background-color:#fff;padding-left:10px;font-size:14px;}
+.pub_set{padding-top:6px;padding-bottom:6px;}
+.header_box{  width: 1200px;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  height: 40px;
+  background-color: #fff;
+  z-index: 12;
+  margin-left:-600px;
+}
+.home_logo{  float: left;
+  width: 108px;
+  height: 40px;}
+.title{  float: right;
+  width: 56px;
+  height: 40px;
+  margin-right: 10px;}

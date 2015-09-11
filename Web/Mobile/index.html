@@ -1,0 +1,1200 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no;" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="Js/jquery-1.9.1.min.js"></script>
+    <!--<script src="js/TweenMax.min.js"></script>-->
+    <!--<script src="js/jquery.ui.effect.js"></script>-->
+    <script src="Js/jquery.easing.min.js"></script>
+    <script src="Js/Cmn.js"></script>
+    <script src="Js/CmnAjax.js"></script>
+    <!--<script src="js/jquery.cycle.all.js"></script>-->
+    <script src="Js/animate/AnimateMan.js"></script>
+    <script src="Js/animate/ScenesSwitch.js"></script>
+    <script src="Js/animate/Scenes.js"></script>
+    <script src="Js/animate/AnimateFrame.js"></script>
+    <script src="Js/animate/BasAnimate.js"></script>
+    <script src="Js/CmnFuncExd.js"></script>
+    <script src="Js/WechatShare.js"></script>
+    <script src="Js/Dx.js"></script>
+    <script src="../Js/jquery.mousewheel.min.js"></script>
+    <script src="Js/SiteJs/SiteFunc.js"></script>
+    <script src="Js/provinceCity.js"></script>
+    <script src="Js/SiteJs/Site.js"></script>
+    <script src="Js/SiteJs/Index.js"></script>
+    <script src="Js/SiteJs/Public.js"></script>
+    <title>东风雪铁龙新C4L产品网站</title>
+    <script type="text/javascript">
+        var _smq = _smq || [];
+        _smq.push(['_setAccount', 'c29d8d', new Date()]);
+        _smq.push(['pageview']);
+
+        (function () {
+            var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+            sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/sm.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+        })();
+        (function () {
+            var mz = document.createElement('script');
+            mz.type = 'text/javascript'; mz.async = true; mz.src = 'http://js.miaozhen.com/t.js';
+            var t = document.getElementsByTagName('script')[0];
+            t.parentNode.insertBefore(mz, t);
+        })();
+    </script>
+
+</head>
+<body> 
+    <img style="position:fixed;left:-1000000px;" src="/images/ShareImg.jpg" />
+    <!--LoadingWrap-->
+    <div class="LoadingWrap">
+        <div class="LoadingInner">
+            <div class="LoadingText"><img src="images/LoadingText.png" /></div>
+            <div class="LoadingBg">
+                <img class="LoadingBgImg" src="images/LoadingBg.png" />
+                <div class="LoadingCar">
+                    <img class="load_car" src="images/load_car.png" />
+                    <div class="load_line"><img src="images/load_line1.png"><div class="load_circle"></div></div>
+                </div>
+                <div class="LoadingNum">0%</div>
+            </div>
+        </div>
+    </div>
+    <div class="Wrap cmn-AnimteFrameContainer">
+        <div class="Main cmn-ScenesContainer">
+
+            <!--首页场景-->
+            <div class="cmn-Scenes PublicScenes firstpage" id="firstpage">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_first_1.png" /></div>
+                <div class="Inner">
+                    <div class="title_first_1"><img src="images/load.png" lazypath="images/title_first_1.png" /></div>
+                    <div class="title_submit">
+                        <!--class标签下的title_btn1为选中状态-->
+                        <div class="title_first1 title_btn title_btn1 JscReservation">
+                            <span></span>
+                        </div>
+                        <div class="title_first2 title_btn title_btn1 JscBooking">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--第一页场景-->
+            <div class="cmn-Scenes PublicScenes Home" id="Home">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_1.jpg" /></div>
+                <div class="Inner">
+                    <div class="title_1 animate_in"><img src="images/load.png" lazypath="images/title_1.png" /></div>
+                    <div class="title_1_2 animatr_inleft"><img src="images/load.png" lazypath="images/title_1_2_2.png" /></div>
+                    <div class="title_1_2_1 animate_title_1_2_1"><img src="images/load.png" lazypath="images/title_1_2_1.png" /></div>
+                    <div class="title_1_3 anitame_title_1_3"><img src="images/load.png" lazypath="images/title_1_3.png" /></div>
+                    <div class="arrowComBtn JscTriangleBtn Jsc3"><img src="images/load.png" lazypath="images/arrow_up_1.png" /></div>
+                </div>
+            </div>
+
+            <!--第二页场景-->
+            <div class="cmn-Scenes PublicScenes Page2" id="Page2">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_2.png" /></div>
+                <div class="Inner">
+                    <div class="title_2 animatr_left DynamicHomeTitle"><img src="images/load.png" lazypath="images/title_2.png" /></div>
+                    <!--<div class="title_2_2 DynamicHomeTitle"><img src="images/load.png" lazypath="images/title_2_2.png" /></div>
+                    <div class="title_2_3 DynamicHomeTitle"><img src="images/load.png"  lazypath="images/title_2_3.png" /></div>-->
+                    <div class="arrowComBtn_1 JscTriangleBtn"><img src="images/load.png" lazypath="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第三页场景-->
+            <div class="cmn-Scenes PublicScenes Page3" id="Page3">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_3.png" /></div>
+                <div class="Inner">
+                    <div class="title_3 animatr_left"><img src="images/load.png" lazypath2="images/title_3.png" /></div>
+                    <!--<div class="title_3_2"><img src="images/load.png" lazypath="images/title_3_2.png" /></div>
+                    <div class="title_3_3"><img src="images/load.png" lazypath="images/title_3_3.png" /></div>-->
+                    <div class="arrowComBtn_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第四页场景-->
+            <div class="cmn-Scenes PublicScenes Page4" id="Page4">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg_4.png" /></div>
+                <div class="Inner">
+                    <div class="title_4 animatr_left"><img src="images/load.png" lazypath2="images/title_4.png" /></div>
+                    <div class="arrowComBtn_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第五页场景-->
+            <div class="cmn-Scenes PublicScenes Page5" id="Page5">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_5.png" /></div>
+                <div class="Inner">
+                    <div class="title_5_1"><img src="images/load.png" lazypath2="images/title_5_1.png" /></div>
+                    <div class="title_5_2_1"><img src="images/load.png" lazypath2="images/title_5_2_1.png" /></div>
+                    <div class="title_5_2_2"><img src="images/load.png" lazypath2="images/title_5_2_2.png" /></div>
+                    <div class="title_5_3"><img src="images/load.png" lazypath2="images/title_5_3.png" /></div>
+                    <div class="title_5_4"><img src="images/load.png" lazypath2="images/title_5_4.png" /></div>
+                    <div class="arrowComBtn_2 JscTriangleBtn Jsc3"><img src="images/load.png" lazypath2="images/arrow_up_9.png" /></div>
+                </div>
+            </div>
+
+            <!--第六页场景-->
+            <div class="cmn-Scenes PublicScenes Page6" id="Page6">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_6.png" /></div>
+                <div class="Inner">
+                    <div class="title_6_1"><img src="images/load.png" lazypath2="images/title_6_1.png" /></div>
+                    <div class="title_6_2"><img src="images/load.png" lazypath2="images/title_6_2.png" /></div>
+                    <div class="title_6_3"><img src="images/load.png" lazypath2="images/title_6_3.png" /></div>
+                    <div class="arrowComBtn_2_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第七页场景-->
+            <div class="cmn-Scenes PublicScenes Page7" id="Page7">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_7_2.png" /></div>
+                <div class="Bg JscBg7" style="width:0px;"><img src="images/load.png" lazypath2="images/bg_7.png" /></div>
+                <div class="Inner">
+                    <div class="title_7_1 animatr_left"><img src="images/load.png" lazypath2="images/title_7_1.png" /></div>
+                    <div class="title_7_2 animatr_left"><img src="images/load.png" lazypath2="images/title_7_2.png" /></div>
+                    <div class="title_7_3 animatr_left"><img src="images/load.png" lazypath2="images/title_7_3.png" /></div>
+                    <div class="arrowComBtn_2 JscTriangleBtn Jsc3"><img src="images/load.png" lazypath2="images/arrow_up_10.png" /></div>
+                </div>
+            </div>
+
+            <!--第八页场景-->
+            <div class="cmn-Scenes PublicScenes Page8" id="Page8">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_8.png" /></div>
+                <div class="Inner">
+                    <div class="title_8_1 animatr_left"><img src="images/load.png" lazypath2="images/title_8_1.png" /></div>
+                    <div class="arrowComBtn_2_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第九页场景-->
+            <div class="cmn-Scenes PublicScenes Page9" id="Page9">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg_9.png" /></div>
+                <div class="Inner">
+                    <div class="title_9_1 animatr_left"><img src="images/load.png" lazypath2="images/title_9_1.png" /></div>
+                    <div class="arrowComBtn_2_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十页场景-->
+            <div class="cmn-Scenes PublicScenes Page10" id="Page10">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_10.png" /></div>
+                <div class="Inner">
+                    <div class="title_10_1"><img src="images/load.png" lazypath2="images/title_10_1.png" /></div>
+                    <div class="title_10_2_1 animatr_left"><img src="images/load.png" lazypath2="images/title_10_2_1.png" /></div>
+                    <div class="title_10_2_2 animatr_left"><img src="images/load.png" lazypath2="images/title_10_2_2.png" /></div>
+                    <div class="title_10_2_3 animatr_left"><img src="images/load.png" lazypath2="images/title_10_2_3.png" /></div>
+                    <div class="arrowComBtn_3 JscTriangleBtn Jsc3"><img src="images/load.png" lazypath2="images/arrow_up_11.png" /></div>
+                </div>
+            </div>
+
+            <!--第十一页场景-->
+            <div class="cmn-Scenes PublicScenes Page11" id="Page11">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg_11.png" /></div>
+                <div class="Inner">        
+                    <div class="title_11_2"><img src="images/load.png" lazypath2="images/title_11_2.jpg" /></div>                    
+                    <div class="title_11_3"><img src="images/load.png" lazypath2="images/title_11_3.png" /></div> 
+                    <div class="title_11_4"><img src="images/load.png" lazypath2="images/title_11_4.png" /></div>                   
+                    <div class="arrowComBtn_3_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十三页场景-->
+            <div class="cmn-Scenes PublicScenes Page13" id="Page13">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg_13.png" /></div>
+                <div class="Inner">
+                    <div class="title_13_1 animatr_left"><img src="images/load.png" lazypath2="images/title_13_1.png" /></div>
+                    <div class="arrowComBtn_3_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十二页场景-->
+            <div class="cmn-Scenes PublicScenes Page12" id="Page12">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_12.png" /></div>
+                <div class="Bg" style="display:none"><img src="images/load.png" lazypath2="images/load.png" lazypath2="images/bg_12_2.png" /></div>
+                <div class="Inner">
+                    <div class="title_12_1 animatr_left"><img src="images/load.png" lazypath2="images/title_12_1_1.png" /></div>
+                    <div class="title_12_2 JscTitle122"><img src="images/load.png" lazypath2="images/title_12_2.png" /></div>
+                    <div class="title_12_3 JscTitle123"><img src="images/load.png" lazypath2="images/title_12_3.png" /></div>
+                    <div class="arrowComBtn_3_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十二页场景-->
+            <div class="cmn-Scenes PublicScenes Page12" id="Page12">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_12_2.png" /></div>
+                <div class="Bg" style="display:none"><img src="images/load.png" lazypath2="images/load.png" lazypath2="images/bg_12_2.png" /></div>
+                <div class="Inner">
+                    <div class="title_pic tip_bar"><img src="images/load.png" lazypath2="images/title_pic.png" /></div>
+                    <div class="title_picleft left_arrow"><img src="images/load.png" lazypath2="images/title_picleft.png" /></div>
+                    <div class="title_picright right_arrow"><img src="images/load.png" lazypath2="images/title_picright.png" /></div>
+                    <div class="title_12_1 animatr_left"><img src="images/load.png" lazypath2="images/title_12_1.png" /></div>
+                    <div class="arrowComBtn_3_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十四页场景-->
+            <div class="cmn-Scenes PublicScenes Page14" id="Page14">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_14_1.png" /></div>
+                <div class="Bg JscBg141" style="display: none; z-index: 2; width: 640px;"><img src="images/load.png" lazypath2="images/bg_14_2.png" /></div>
+                <div class="Bg JscBg142" style="display: none; z-index: 3; width: 640px;"><img src="images/load.png" lazypath2="images/bg_14.png" /></div>
+                <div class="title_14_1 animatr_left" style="z-index:10;"><img src="images/load.png" lazypath2="images/title_14_1.png" /></div>
+                <div class="Inner">
+                    <div class="arrowComBtn_3_1 JscTriangleBtn" style="z-index:10;"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十五页场景-->
+            <div class="cmn-Scenes PublicScenes Page15" id="Page15">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_15.png" /></div>
+                <div class="Inner">
+                    <div class="title_15_1 animatr_left"><img src="images/load.png" lazypath2="images/title_15_1.png" /></div>
+                    <div class="title_15_2_1 animatr_left"><img src="images/load.png" lazypath2="images/title_15_2_1.png" /></div>
+                    <div class="title_15_2_2 animatr_left"><img src="images/load.png" lazypath2="images/title_15_2_2.png" /></div>
+                    <div class="title_15_3 animatr_left"><img src="images/load.png" lazypath2="images/title_15_3.png" /></div>
+                    <div class="arrowComBtn_5 JscTriangleBtn Jsc3"><img src="images/load.png" lazypath2="images/arrow_up_12.png" /></div>
+                </div>
+            </div>
+
+            <!--第十六页场景-->
+            <div class="cmn-Scenes PublicScenes Page16" id="Page16">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_16.png" /></div>
+                <div class="Inner">
+                    <div class="title_16_1 animatr_left"><img src="images/load.png" lazypath2="images/title_16_1.png" /></div>
+                    <div class="title_16_2"><img src="images/load.png" lazypath2="images/common_curpsor.png" /></div>
+                    <div class="title_16_3"><img src="images/load.png" lazypath2="images/title_16_3.png" /></div>
+                    <div class="title_16_4"><img src="images/load.png" lazypath2="images/title_16_4.png" /></div>
+                    <div class="arrowComBtn_5_1 JscTriangleBtn JscTitle16"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十七页场景-->
+            <div class="cmn-Scenes PublicScenes Page17" id="Page17">
+                <div class="Bg"><img src="images/load.png" lazypath2="images/bg_17.png" /></div>
+                <div class="Inner">
+                    <div class="title_17_1 animatr_left"><img src="images/load.png" lazypath2="images/title_17_1.png" /></div>
+                    <div class="arrowComBtn_5_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+
+            <!--第十八页场景-->
+            <div class="cmn-Scenes PublicScenes Page18" id="Page18">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_18.png" /></div>
+                <div class="Inner">
+                    <div class="title_18_1 animatr_left"><img src="images/load.png" lazypath2="images/title_18_1.png" /></div>
+                    <div class="title_18_2"><img src="images/load.png" lazypath2="images/title_18_2.jpg" /></div>
+                    <div class="title_18_3"><img src="images/load.png" lazypath2="images/title_18_3.png" /></div>
+                    <div class="title_18_4"><img src="images/load.png" lazypath2="images/common_curpsor.png" /></div>
+                    <div class="arrowComBtn_5_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第十九页场景-->
+            <div class="cmn-Scenes PublicScenes Page19" id="Page19">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_19_2.jpg" /></div>
+                <div class="Bg JscBg19" style="width:0px"><img src="images/load.png" lazypath2="images/bg_19.png" /></div>
+                <div class="Inner">
+                    <div class="title_19_1 animatr_left"><img src="images/load.png" lazypath2="images/title_19_1.png" /></div>
+                    <div class="arrowComBtn_5_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十页场景-->
+            <div class="cmn-Scenes PublicScenes Page20" id="Page20">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_20.png" /></div>
+                <div class="Inner">
+                    <div class="title_20_1 animatr_left"><img src="images/load.png" lazypath2="images/title_20_1.png" /></div>
+                    <div class="arrowComBtn_5_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十一页场景-->
+            <div class="cmn-Scenes PublicScenes Page21" id="Page21">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_21.png" /></div>
+                <div class="Inner">
+                    <div class="title_21_1 animatr_left"><img src="images/load.png" lazypath2="images/title_21_1.png" /></div>
+                    <div class="title_21_2_1 animatr_left"><img src="images/load.png" lazypath2="images/title_21_2_1.png" /></div>
+                    <div class="title_21_2_2 animatr_left"><img src="images/load.png" lazypath2="images/title_21_2_2.png" /></div>
+                    <div class="title_21_3 animatr_left"><img src="images/load.png" lazypath2="images/title_21_3.png" /></div>
+                    <div class="arrowComBtn_6 JscTriangleBtn Jsc3"><img src="images/load.png" lazypath2="images/arrow_up_13.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十二页场景-->
+            <div class="cmn-Scenes PublicScenes Page22" id="Page22">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_22_1.png" /></div>
+                <div class="Inner">
+                    <div class="title_22_pic1 tip_bar"><img src="images/load.png" lazypath2="images/title_22_2.png" /></div>
+                    <div class="title_22_pic2 tip_bar"><img src="images/load.png" lazypath2="images/title_22_2.png" /></div>
+                    <div class="title_22_pic3 tip_bar"><img src="images/load.png" lazypath2="images/title_22_2.png" /></div>
+                    <div class="title_22_pic4 tip_bar"><img src="images/load.png" lazypath2="images/title_22_2.png" /></div>
+                    <div class="title_22_1 animatr_left"><img src="images/load.png" lazypath2="images/title_22_1.png" /></div>
+                    <div class="arrowComBtn_6_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十三页场景-->
+            <div class="cmn-Scenes PublicScenes Page23" id="Page23">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_23.png" /></div>
+                <div class="Inner">
+                    <div class="title_23_1 animatr_left"><img src="images/load.png" lazypath2="images/title_23_1.png" /></div>
+                    <div class="arrowComBtn_6_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十四页场景-->
+            <div class="cmn-Scenes PublicScenes Page24" id="Page24">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_24.png" /></div>
+                <div class="Inner">
+                    <div class="title_24_1 animatr_left"><img src="images/load.png" lazypath2="images/title_24_1.png" /></div>
+                    <div class="arrowComBtn_6_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十五页场景-->
+            <div class="cmn-Scenes PublicScenes Page25" id="Page25">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_25.png" /></div>
+                <div class="Inner">
+                    <div class="title_25_1 animatr_left"><img src="images/load.png" lazypath2="images/title_25_1.png" /></div>
+                    <div class="arrowComBtn_6_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十六页场景-->
+            <div class="cmn-Scenes PublicScenes Page26" id="Page26">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_26.png" /></div>
+                <div class="Inner">
+                    <div class="title_26_1 animatr_left"><img src="images/load.png" lazypath2="images/title_26_1.png" /></div>
+                    <div class="arrowComBtn_6_1 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /></div>
+                </div>
+            </div>
+
+            <!--第二十七页场景-->
+            <!--<div class="cmn-Scenes PublicScenes Page27" id="Page27">
+                <div class="Bg"><img src="images/load.png" lazypath="images/bg_27.png" /></div>
+                <div class="Inner">
+                    <div class="title_27_1"><img src="images/load.png" lazypath2="images/title_27_1.png" /><i></i></div>
+                    <div class="video_bigbg"><i></i></div>
+                    <div class="video_box JscVideoBox">
+                        <div class="video_big video_bigbg video_con1 JscVideoList1"><i class="dat-video_url-attc" attc=""></i><img class="dat-video_pic-src" src="images/load.png" lazypath="images/video_b.png" /></div>
+                        <div class="video_big video_bigbg video_con2 JscVideoList2"><i class="dat-video_url-attc" attc=""></i><img class="dat-video_pic-src" src="images/load.png" lazypath="images/video_c.png" /></div>
+                        <div class="video_small video_bigbg video_smallbg video_con3 JscVideoList3"><i class="dat-video_url-attc" attc=""></i><img class="dat-video_pic-src" src="images/load.png" lazypath="images/video_s.png" /></div>
+                    </div>
+                    <div class="video_smallbg"><i></i></div>
+                    <div class="arrowComBtn_7 JscTriangleBtn"><img src="images/load.png" lazypath2="images/arrow_up_8.png" /><i></i></div>
+                </div>
+            </div>-->
+
+            <!--第二十八页场景-->
+            <div class="cmn-Scenes PublicScenes Page28" id="Page28">
+                <div class="Inner">
+                    <div class="search_banner"><img src="images/load.png" lazypath2="images/search_banner.jpg" /></div>
+                    <div class="search_filterBox">
+                        <select id="DealerProvince" class="select">
+                            <option class="JscProvince dat-province_id-value dat-province_desc" value="">一周之内</option>
+                        </select>
+                        <select id="DealerCity" class="select">
+                            <option class="JscCity dat-city_id-value dat-city_desc" value="1">一周之内</option>
+                        </select>
+                    </div>
+                    <div class="search_address_list">
+                        <ul>
+                            <li class="JscDealerSearchFloatAdressDetailed">
+                                <a>
+                                    <div class="map">
+                                        <div class="tag"><img src="images/tag.jpg" /></div>
+                                        <!--<h4 class="title">查看地图</h4>-->
+                                    </div>
+                                    <h2 class="addressTitle dat-dealer_desc">上海弘隆汽车销售服务有限公司</h2>
+                                    <h2 class="dat-address">上海市松江区新桥镇新镇街599号10幢</h2>
+                                    <p class="telNum">客户服务热线:<em class="dat-service_phone">400 886 668</em></p>
+                                    <p class="telNum">销售热线:<em class="dat-sales_phone">021-67867795</em></p>
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a href="#" target="_blank">
+                                    <div class="map">
+                                        <div class="tag"><img src="images/load.png" lazypath="images/tag.jpg" /></div>
+                                        <h4 class="title">查看地图</h4>
+                                    </div>
+                                    <h2 class="addressTitle">上海弘隆汽车销售服务有限公司上海市松江区新桥镇新镇街599号10幢</h2>
+                                    <p class="telNum">客户服务热线<tel>400 886 668</tel></p>
+                                    <p class="telNum">销售热线 021-67867795</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <div class="map">
+                                        <div class="tag"><img src="images/load.png" lazypath="images/tag.jpg" /></div>
+                                        <h4 class="title">查看地图</h4>
+                                    </div>
+                                    <h2 class="addressTitle">上海弘隆汽车销售服务有限公司上海市松江区新桥镇新镇街599号10幢</h2>
+                                    <p class="telNum">客户服务热线<tel>400 886 668</tel></p>
+                                    <p class="telNum">销售热线 021-67867795</p>
+                                </a>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--第二十九页场景-->
+            <div class="cmn-Scenes PublicScenes Page29" id="Page29">
+                <div class="Inner">
+                    <div class="canshu_banner"><img src="images/load.png" lazypath2="images/canshu_banner.jpg" /></div>
+                    <div class="canshu_filterBox">
+                        <div class="selset_box">
+                            <!--1.8-领先5档-->
+                            <div class="info pirture1 JscpubPrice">
+                                <img src="images/pirture1.png" />
+                            </div>
+                            <!--1.8-领先手自一体-->
+                            <div class="info pirture2 JscpubPrice">
+                                <img src="images/pirture2.png" />
+                            </div>
+                            <!--1.8-豪华手自一体-->
+                            <div class="info pirture3 JscpubPrice">
+                                <img src="images/pirture3.png" />
+                            </div>
+                            <!--1.8-尊贵手自一体-->
+                            <div class="info pirture4 JscpubPrice">
+                                <img src="images/pirture4.png" />
+                            </div>
+                            <!--1.2-豪华5档手动 -->
+                            <div class="info pirture5 JscpubPrice">
+                                <img src="images/pirture5.png" />
+                            </div>
+                            <!--1.2-豪华手自一体  -->
+                            <div class="info pirture6 JscpubPrice">
+                                <img src="images/pirture6.png" />
+                            </div>
+                            <!--1.2-尊贵手自一体 -->
+                            <div class="info pirture7 JscpubPrice">
+                                <img src="images/pirture7.png" />
+                            </div>
+                            <!--1.6-尊贵手自一体 -->
+                            <div class="info pirture8 JscpubPrice">
+                                <img src="images/pirture8.png" />
+                            </div>    
+                            <!--1.6旗舰手自一体  -->                       
+                            <div class="info pirture9 JscpubPrice">
+                                <img src="images/pirture9.png" />
+                            </div>
+                            <div class="set_deploy JscConfigList">
+                                <select class="select">
+                                    <option config="1">1.8L-领先型5档</option>
+                                    <option config="2">1.8L-领先型手自一体</option>
+                                    <option config="3">1.8L-豪华型手自一体</option>
+                                    <option config="4">1.8L-尊贵型手自一体</option>
+                                    <option config="5">1.2T-豪华型5档手动</option>
+                                    <option config="6">1.2T-豪华型手自一体</option>
+                                    <option config="7">1.2T-尊贵型手自一体</option>
+                                    <option config="8">1.6T-尊贵型手自一体</option>
+                                    <option config="9">1.6T-旗舰型手自一体</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="scroll_box JscCanshuAbs">
+                        <div class="car_parameters car_parameters1 JscCarParameters">
+                            <!--1.8-领先5档-->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters1.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration JscCanshu2">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfiguration JscConfigurationImg">
+                                    <img src="images/External1.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal1.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment1.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment1.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort1.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters2 JscCarParameters">
+                            <!--1.8-领先手自一体-->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters2.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External2.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal2.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment2.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment2.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort2.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters3 JscCarParameters">
+                            <!--1.8-豪华手自一体-->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters3.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External3.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal3.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment3.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment3.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort3.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters4 JscCarParameters">
+                            <!--1.8-尊贵手自一体-->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters4.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External4.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal4.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment4.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment4.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort4.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters5 JscCarParameters">
+                            <!--1.2-豪华5档手动 -->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters5.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External5.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal5.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment5.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment5.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort5.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters6 JscCarParameters">
+                            <!--1.2-豪华手自一体  -->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters6.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External6.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal6.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment6.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment6.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort6.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters7 JscCarParameters">
+                            <!--1.2-尊贵手自一体 -->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters7.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External7.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal7.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment7.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment7.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort7.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters8 JscCarParameters">
+                            <!--1.6-尊贵手自一体  -->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters8.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External8.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal8.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment8.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment8.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort8.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/information.png" />
+                            </div>
+                        </div>
+                        <div class="car_parameters9 JscCarParameters">
+                            <!--1.6旗舰手自一体-->
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>技术参数</p>
+                                </div>
+                                <div class="Technical_parameters1 JscConfigurationImg">
+                                    <img src="images/Technical_parameters9.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>外部</p>
+                                </div>
+                                <div class="External1 JscConfigurationImg">
+                                    <img src="images/External9.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>内部</p>
+                                </div>
+                                <div class="Internal1 JscConfigurationImg">
+                                    <img src="images/Internal9.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>安全装备</p>
+                                </div>
+                                <div class="Safety_equipment1 JscConfigurationImg">
+                                    <img src="images/Safety_equipment9.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>信息娱乐</p>
+                                </div>
+                                <div class="Information_entertainment1 JscConfigurationImg">
+                                    <img src="images/Information_entertainment9.png" />
+                                </div>
+                            </div>
+                            <div class="canshu_abs JscConfiguration">
+                                <div class="Technical_parameters Technical_btn">
+                                    <p>舒适便利</p>
+                                </div>
+                                <div class="Comfort1 JscConfigurationImg">
+                                    <img src="images/Comfort9.png" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                      
+                                
+                </div>
+            </div>            
+
+        </div><!--Main_end-->
+    </div><!--Wrap_end-->
+    <!----------公共部分--------->
+    <!--头部logo-->
+    <div class="header_box clearfix">
+        <div class="logo fl"><a href="javascript:void(0)"></a></div>
+        <div class="title fr"><a href="javascript:void(0)"></a></div>
+    </div>
+    <!--快捷菜单-->
+    <div class="navdot JscLeftNav"></div>
+    <div class="navrightdot JscRightNav">
+        <img src="images/submit_float2.png">
+    </div>
+    <div class="navlist JscNavList">
+        <ul>
+            <li class="JscHome JscIconLi">
+                <a>
+                    <i class="home_icon">&nbsp;</i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="JscC4l JscIconLi">
+                <a>
+                    <i class="icon_img newcar_icon"></i>
+                    <p>品鉴新C4L</p>
+                </a>
+            </li>
+            <li class="JscConf JscIconLi">
+                <a>
+                    <i class="icon_img canshu_icon"></i>
+                    <p>参数配置表</p>
+                </a>
+            </li>
+            <li class="JscNews JscIconLi">
+                <a>
+                    <i class="icon_img news_icon"></i>
+                    <p>经销商查询</p>
+                </a>
+            </li>
+            <!--<li class="JscIconLi JscWonderful">
+                <a>
+                    <i class="icon_img down_icon"></i>
+                    <p>精彩下载</p>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+
+
+    <!---------------------浮层-------------------->
+    <div class="pop_float JscPopFloat" style="display:none;">
+        <!--<!--精彩视频-->
+        <!--<div class="download_float JscVideoFloat" style="display:none;">
+            <a href="javascript:void(0)" class="closeBtn1 JscCloseBtn">关闭</a>
+            <div class="scroll_x">
+                <div class="car_pic">
+                    <ul class="car_pic1 JscVideoBoxList">-->
+                        <!--<li id="JscVideoLi" class="JscVideos">--><!--<video width="640" height="490" autoplay controls class="dat-video_url-src" src="">--></video></li>
+                    <!--</ul>
+                </div>
+            </div>-->
+            <!--<div class="submit_scroll">
+                <div class="submit_scrollleft">
+                    <a href="javascript:void(0)"><img src="images/submit_scrollleft.png" /></a>
+                </div>
+                <div class="scrollmiddle">
+                    <a href="#" class="select1 popselect"></a>
+                    <a href="#" class="select2 popselect"></a>
+                    <a href="#" class="select3 popselect"></a>
+                    <a href="#" class="select4 popselect"></a>
+                </div>
+                <div class="submit_scrollright">
+                    <a href="javascript:void(0)"><img src="images/submit_scrollright.png" /></a>
+                </div>
+            </div>-->
+        <!--</div>-->
+        <!--C4L子菜单-->
+        <div class="submenu_float JscSubmitFloat" style="display:none;">
+
+            <div class="caidanbanner">
+                <!--class标签添加select为选中状态-->
+                <div class="donglisubmit submit_float select JscPower">
+                    <span></span>
+                </div>
+                <div class="hexinsubmit submit_float select JscCore">
+                    <span></span>
+                </div>
+                <div class="zhuoyuesubmit submit_float select JscOutstanding">
+                    <span></span>
+                </div>
+                <div class="anquansubmit submit_float select JscSafety">
+                    <span></span>
+                </div>
+                <div class="sushisubmit submit_float select JscCozys">
+                    <span></span>
+                </div>
+                <div class="zhinengsubmit submit_float select JscIntelligent">
+                    <span></span>
+                </div>
+                <div class="submit_float2 JscSubmitFloat2">
+                    <img src="images/submit_float2.png" />
+                </div>
+            </div>
+            
+        </div>
+        <!--预约购车-->
+        <div class="yuyueCon shopping_float JscBookingFloat" siteaddress="预约购车">
+            <a href="javascript:void(0)" class="closeBtn JscCloseBtn">关闭</a>
+            <div class="banner"></div>
+            <div class="formInfo Js_FuChen">
+                <form method="post" action="">
+                    <ul>
+                        <li>
+                            <label><b>*</b>姓名：</label>
+                            <input class="Js_UserName" type="text" placeholder="" />
+                        </li>
+                        <li class="JscSelectSexBox">
+                            <label><b>*</b>性别：</label>
+                            <!--span标签添加select为性别选中状态-->
+                            <span class="man_box sex_box JscSex select" values="男"><em></em><i>男</i></span>
+                            <span class="women_box sex_box JscSex" values="女"><em></em><i>女</i></span>
+                        </li>
+                        <li>
+                            <label><b>*</b>手机：</label>
+                            <input class="Js_Phone" type="tel" maxlength="11" placeholder="" />
+                        </li>
+                        <li>
+                            <label><b>*</b>计划购车时间：</label>
+                            <select class="big_select pub_select JscBuyCarTime">
+                                <option value="一周之内">一周之内</option>
+                                <option value="两周之内">两周之内</option>
+                                <option value="一个月之内">一个月之内</option>
+                                <option value="两个月之内">两个月之内</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label><b>*</b>省份/直辖市：</label>
+                            <select class="big_select pub_select Js_IsProvince" name="Province2">
+                            </select>
+                        </li>
+                        <li>
+                            <label class="city_bar"><b>*</b>城市：区/县</label>
+                            <select class="small_select pub_select Js_IsCity" name="City2"></select>
+                            <select class="small_select pub_select Js_IsCounty" name="County2"></select>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="btn Js_SubmitBtn">立即预约</a>
+                </form>
+            </div>
+            <div class="hint"><p>请准确填写您的预定信息我们将在第一时间与您联系</p></div>
+        </div>
+
+        <!--预约试驾-->
+        <div class="yuyueCon dirve_float JscReservationFloat">
+            <a href="javascript:void(0)" class="closeBtn JscCloseBtn">关闭</a>
+            <div class="shijiabanner"></div>
+            <div class="formInfo Js_FuChen" siteaddress="预约试驾">
+                <form method="post" action="">
+                    <ul>
+                        <li>
+                            <label><b>*</b>姓名：</label>
+                            <input class="Js_UserName" type="text" placeholder="" />
+                        </li>
+                        <li class="JscSelectSexBox">
+                            <label><b>*</b>性别：</label>
+                            <!--span标签添加select为性别选中状态-->
+                            <span class="man_box sex_box JscSex select" values="男"><em></em><i>男</i></span>
+                            <span class="women_box sex_box JscSex" values="女"><em></em><i>女</i></span>
+                        </li>
+                        <li>
+                            <label><b>*</b>手机：</label>
+                            <input class="Js_Phone" type="tel" maxlength="11" placeholder="" />
+                        </li>
+                        <li>
+                            <label><b>*</b>计划购车时间：</label>
+                            <select class="big_select pub_select JscBuyCarTime">
+                                <option value="一周之内">一周之内</option>
+                                <option value="两周之内">两周之内</option>
+                                <option value="一个月之内">一个月之内</option>
+                                <option value="两个月之内">两个月之内</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label><b>*</b>省份/直辖市：</label>
+                            <select class="big_select pub_select Js_IsProvince" name="Province1">                        
+                            </select>
+                        </li>
+                        <li>
+                            <label class="city_bar"><b>*</b>城市：区/县</label>
+                            <select class="small_select pub_select Js_IsCity" name="City1"></select>
+                            <select class="small_select pub_select Js_IsCounty" name="County1"></select>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="btn Js_SubmitBtn">立即预约</a>
+                </form>
+            </div>
+            <div class="hint"><p>请准确填写您的预定信息我们将在第一时间与您联系</p></div>
+        </div>
+    </div>
+</body>
+<script>
+    Cmn.Func.MobileAdaptive(640, 1008, "images/AdviseVertical.png", Cmn.Func.MobileAdaptiveMode.WidthHeight);
+</script>
+
+</html>

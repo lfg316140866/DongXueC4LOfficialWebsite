@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+// @import "compass/helpers";
+// @import "compass/tilities";
+
+//定义浏览器的兼容最低版本
+$browser-minimum-versions:("ie":"8");
+/*-------------------------------------css--------------------------------------------*/
+
+/************************************品鉴C4L人性科技(安全)************************************/
+
+/*****************值得信赖的五星安全*******************/
+.five_star_text{@include position(13%,-20%);width:20.5%;}
+
+/*****************“太空舱”立体防护车身*******************/
+.car_body_text{@include position(13%,-22%);width:22%;}
+.light_drop1{@include position(54%,13%);width:11.5%;}
+.light_drop2{@include position(20%,52%);width:10.5%;}
+.light_drop3{@include position(32.5%,72.5%);width:7%;}
+.light_drop4{@include position(60.5%,63.5%);width:14%;}
+.drop_btn{width:2%;}
+.drop_btn1{@include position(63%,23.5%);}
+.drop_btn2{@include position(26%,51%);}
+.drop_btn3{@include position(45%,75%);}
+.drop_btn4{@include position(57%,62%);}
+/*****************“All around body”6安全气囊*******************/
+.safety_text{@include position(62.5%,-30%);width:30.5%;}
+
+/*****************“压力直感”胎压监测系统*******************/
+.monitor_one{@include position();width: $Width;}
+
+/*****************防眩目内后视镜/可视倒车系统*******************/
+
+/*****************ESP/HAC*******************/
+.esp_title{@include position(-6%,58%);width:12%;}
+.esp_des{@include position(61%,39.5%);width:13%;}
+.esp_car{@include position-right(33%,10%);width:39%;}
+
+
+/*****************LED日间行车灯*******************/
+.day_light_car{@include position();width:$Width;}
+.day_light_shadow{@include position();width: 72%;}
+.day_light_text{ @include position-right(18%,-21%); width: 19.6%;}
+.day_light2{@include position();width:$Width;display: none;}
+.day_light1{@include position();width:$Width;display: none;}
+.box_tip{width: 19%;position:absolute;bottom:0;left:50%;margin-left:-9.5%;}
+
+/*****************澎湃动力-动力家族*******************/
+.power_family_tip{@include position(24%,-50%);width:49%;}
+
+/*****************澎湃动力-卓越操控*******************/
+.excellent_control_tip{@include position(20%,-36.5%);width:36%;}
+
+/*****************人性科技-舒适*******************/
+.comfortable_tip{@include position(19%,-35%);width:34%;}
+
+
+/*****************人性科技-智能*******************/
+.intelligence_tip{@include position(22%,-35%);width:34.5%;}
+
+/*****************人性科技-安全*******************/
+.safety_title{bottom:-22%;left: 58%; position:absolute;width: 33%;}
+
+
+/*****************人性科技-舒适2*******************/
+.comfortable_tip2{@include position(21.5%,55.5%);width:18%;}
+
+
+
+
+
+
+

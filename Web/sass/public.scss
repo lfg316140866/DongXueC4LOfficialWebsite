@@ -1,0 +1,210 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import 'compass/support';
+// @import "compass/helpers";
+// @import "compass/tilities";
+
+
+//定义浏览器的兼容最低版本
+$browser-minimum-versions:("ie":"8");
+/************************************公共样式*********************************************/
+
+
+/*********************loading部分***********************/
+
+.LoadingWrap{display:none;@include stretch();z-index:1000000;background:#eeeeee;}
+.LoadingInner{text-align:center;height: $Height;width: $Width;@include position();}
+.LoadingBg{width:$Width;@include position(50%);}
+.LoadingBg .LoadingBgImg{width:$Width;}
+.LoadingText{@include horizontal-center(22%,270px);}
+.load_line{height:145px;@include horizontal-center(102px,511px);}
+.load_car{@include horizontal-center(0px,451px);z-index: 2;}
+.load_circle{display:none;background: image-url('public/load_line2.png') repeat;@extend .load_line;top: 0;}
+.load_line.update img{display:none;}
+.load_line.update .load_circle{display:block;}
+.LoadingNum{text-align:center;@include horizontal-center(-70px,120px);@include font-style($MenuSideBarBig,$Color-Red,null,600);}
+
+
+/*********************左侧导航部分***********************/
+.left_sidebar{height: 94%;width: 6%;@include position(35px);z-index: 10;
+  .left_sidebar_click{height: $Height;width:9px;@include position();background: image-url('public/left_sidebar_bg.png') repeat;
+     .click_btn{@include vertically-center(2px,39px);
+       a{
+          &:hover img{ @include animate-spin();@include animation(spin 800ms 0ms linear 1 both);}
+       }
+     }
+  }
+  .left_sidebar_box{height:$Height;width:$Width;@include position();background:image-url('public/left_sidebar_bg.png') repeat;display:none;
+     .sidebar_top{height: 63%;
+        .sidebar_nav{height: $Height;width: $Width;
+          li{height:20%;border-bottom:1px solid $Color-White;text-align:center;
+               a{color:$Color-White;position: relative;
+                  &:hover{border-right:1px solid $Color-Red;background-color:$Color-White;color:$Color-Red;
+                     .nav_hoverimg{display:block;@extend %center-block;}
+                     .nav_img{display:none;@extend %center-block;}
+                  }
+                  span{@include horizontal-center(54%,$Width);font-size:$Font-Size12;}
+                  i{@include horizontal-center(23%,$Width);
+                      .nav_hoverimg{display:none;}
+                      .nav_one_img{width: 21%;}
+                      .nav_two_img{width: 32%;}
+                      .nav_three_img{width: 16%;}
+                      .nav_four_img{width: 23%;}
+                      .nav_five_img{width: 17%;}
+                  }
+               }
+               a.nav_frist:hover{border-top:1px solid $Color-Red;}             
+          }
+          li.sidebar_set{
+              a{border-right:1px solid $Color-Red;background-color:$Color-White;color:$Color-Red;
+                 img.nav_hoverimg{display:block;@extend %center-block;}
+                 img.nav_img{display:none;@extend %center-block;}
+              }
+          }
+          li.frist_set.sidebar_set a{border-top:1px solid $Color-Red;}
+        }
+     }
+     .sidebar_middle{height: 13%;margin-top: 6%;
+        .sidebar_des{height: $Height;width: $Width;
+          li{height: 32%;line-height: 32%;text-align:center;border-bottom:1px solid $Color-White;
+              a{font-size:$MenuSideBarSmall;color:$Color-White;line-height:2.5em;@include prefixer(transform,scale(0.8));font-size:10px\0;width: 103%;
+                  &:hover{text-decoration:underline;}
+              }
+          }
+        }
+     }
+     .sidebar_bottom{height: 24%;text-align:center;
+        .nav_return{margin-top: 20%; 
+            a{font-size:40px;color:$Color-White;
+               &:hover img{@include animate-spin();@include animation(spin 800ms 0ms linear 1 both);}           
+            }
+        }
+     }
+   }
+}
+
+
+
+/*********************右侧导航部分***********************/
+.right_sidebar{@include position-right(9.5%);width:125px;z-index:13;
+  .right_barnav{width: auto;
+     li{margin-bottom:5px;width: 125px;height: 34px;
+         a{width: 37px;height: 36px;background: image-url('icon/btn-s52eeed2141.png') no-repeat;position:absolute;right: 0;}
+         i{width: 125px;height: 34px;background: image-url('icon/btn-s52eeed2141.png') no-repeat;position:absolute;cursor:pointer;right:-180px;}
+     }
+    li.right_sidebar_btn3{display:none;}
+    li.right_sidebar_btn1 i{right: 0;}
+  }
+}
+
+//循环右侧导航背景图片定位
+@for $i from 1 through 3{
+  .right_barnav li.right_sidebar_btn#{$i} a{
+    background-position:(-178+$i*178px)*(-1) 0px;} 
+  }
+
+
+//循环右侧导航hover背景图片定位
+@for $i from 1 through 3{
+  .right_barnav li.right_sidebar_btn#{$i} i{
+    background-position:(-133+$i*178px)*(-1) 0px;}
+  }
+
+
+/*********************品鉴C4L右侧切换导航部分***********************/
+.menu_sidebar{height: auto;@include position-right(35%,2.5%);text-align:right;z-index: 12;
+      i{@include font-style($Font-Size20,$Color-Red,null,600);cursor: pointer;position: relative;
+          strong{width: 24px;height: 24px;background: image-url('icon/menu_bg.png') no-repeat; @include inline-block; @include position(6px,89px);cursor: pointer;}
+      }
+      .dynamic_box{position: relative;
+          .dynamic_tip{}
+          p{height: $Height;@include position-right(18px,-24px);}
+          dl{display:block;}   
+      }
+
+      .technology_box{position: relative;
+         .technology_tip{}
+          p{height: 85%;@include position-right(18px,-24px);}
+          dl{display:none;}       
+      }
+      .technology_box.update p{height: 85%;}
+
+      .menu_set.update{
+        a,i{color:$Color-GrayMenu;}
+        strong{background-position:-24px 0;}
+        em{background-position:-72px 0;}
+        span{background-position:-110px 0;}
+        p{background-color:$Color-GrayMenu;}
+      }
+      p{width: 5px;background-color:$Color-Red;}
+}
+
+.pub_menu{
+     li{margin-top: 6px;
+        a.menu_tip{@include font-style($NewsFont,$Color-Red,null,600);margin-top: 5px;position: relative;
+            em{width: 24px;height: 24px;background: image-url('icon/menu_bg.png') -48px 0px no-repeat;@include inline-block;@include position-right(0,-33px);}       
+        }
+        dl{display:none;
+           dt{
+               a{@include font-style($MenuSideBarSmall,$Color-Red,null,600);@include prefixer(transform,scale(0.9));font-size:10px\0;line-height: 22px;margin-left: 10px;}
+             }
+           dd{position: relative;
+            span{width: 14px;height: 14px;background:image-url('icon/menu_bg.png') -96px 0px no-repeat;@include inline-block;cursor:pointer;@include position-right(-16px,-28px);}
+           }
+        } 
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************顶部LOGO部分***********************/
+.header_box{width: $Width;@include position();height: 40px;background-color:$Color-White;@include legacy-pie-clearfix();z-index: 12;
+     .title{@include float(right);width:56px;height:40px;margin-right: 10px;}
+     .logo{@include float();width:108px;height:40px;}
+     img{@include inline-block;}
+}
+
+
+
+/*********************版权***********************/
+.footer_box{width:$Width;height: 32px;position: absolute;bottom: 0;left: 0;background:image-url('public/footer_bg.png') repeat;@include legacy-pie-clearfix();z-index: 12;
+    .footer_tip{@include float();margin-left: 10px;margin-right: 15px;width: 82px;height: 32px;}
+    .foot_copyright{@include float();width: 640px;height: 32px;
+       p{@include font-style($Font-Size14,$Color-GrayDark,null);line-height:32px;
+          em{font-style:normal;}
+          span{padding: 0 12px;}
+       }
+    }
+    .footer_sidebar{@include float();
+         .footer_menu{@include legacy-pie-clearfix();
+             li{@include float();line-height:32px;
+                a{@include font-style($Font-Size14,$Color-GrayDark,null);line-height:32px;margin: 0 5px;
+                   &:hover{text-decoration:underline;}
+                }
+             }
+         }
+    }
+    .footer_share{@include float(right);width: 174px;height: 32px;background: image-url('public/share_bg.png') no-repeat;
+        .share_sidebar{width:120px;height:26px;margin-left: 54px;padding-top: 3px;
+          li{@include float();width: 25px;height: 26px;margin-right: 4px;
+              a{@extend %transparent_bg;}
+          }
+        }
+    }
+}
+
+.home_icon{width:6.25%;position:absolute;top: 20%;right: 0%; z-index: 10;}
